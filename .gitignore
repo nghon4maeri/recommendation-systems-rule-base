@@ -3,8 +3,11 @@ logs/
 **/logs/
 *.log
 *.log.*
+**/*.log
 __pycache__/
+**/__pycache__/
 *.pyc
+**/*.pyc
 *.pyo
 *.pyd
 .pytest_cache/
@@ -19,10 +22,17 @@ frontend/node_modules/
 frontend/dist/
 frontend/.vite/
 
+# dbt artifacts
+dbt_project/target/
+dbt_project/logs/
+**/target/
+
 # Database & Container Data
 postgres_data/
 airflow_postgres_data/
 docker/postgres_data/
+**/postgres_data/
+
 
 # Notebooks & Environments
 .ipynb_checkpoints/
