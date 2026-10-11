@@ -25,8 +25,12 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import pandas as pd
-import redis
+try:
+    import redis
+except ImportError:
+    redis = None
 import torch
+
 
 # Configure Production Logging
 logging.basicConfig(

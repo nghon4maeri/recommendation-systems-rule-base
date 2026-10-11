@@ -21,9 +21,18 @@ import sys
 import time
 from typing import Any, Dict, List, Optional
 
-import redis
-from kafka import KafkaConsumer
-from kafka.errors import KafkaError
+try:
+    import redis
+except ImportError:
+    redis = None
+
+try:
+    from kafka import KafkaConsumer
+    from kafka.errors import KafkaError
+except ImportError:
+    KafkaConsumer = None
+    KafkaError = Exception
+
 
 # Configure Production Logging
 logging.basicConfig(

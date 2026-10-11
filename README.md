@@ -1,16 +1,18 @@
 # Enterprise Real-Time Streaming Data Platform & Hybrid Recommender System
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Apache%20Kafka-3.6-231F20?style=for-the-badge&logo=apachekafka&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Redis-Feature%20Store-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
   <img src="https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redis-Feature%20Store-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Apache%20Kafka-3.6-231F20?style=for-the-badge&logo=apachekafka&logoColor=white"/>
   <img src="https://img.shields.io/badge/PyTorch-NCF%20(CUDA)-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Apache%20Airflow-2.8-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white"/>
-  <img src="https://img.shields.io/badge/dbt-Core%201.9-FF694B?style=for-the-badge&logo=dbt&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Kubernetes-K8s-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jenkins-Declarative%20CI%2FCD-D24939?style=for-the-badge&logo=jenkins&logoColor=white"/>
+  <img src="https://img.shields.io/badge/pytest-17%20Passed-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker%20Compose-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
+
 
 ---
 
@@ -38,9 +40,15 @@ Originally developed as a local batch proof-of-concept running on static CSV fil
 
 The distributed pipeline operates across 5 decoupled tiers:
 
-1. **Client & Presentation Layer**:
-   - Customers interact with the **Streamlit Web UI** (`:8501`) to browse products, add items to their session cart, and inspect recommendation outputs.
-   - The UI polls recommendations from the **FastAPI Gateway** (`:8000`) and simultaneously emits interaction telemetry.
+1. **Client & Presentation Layer (React 19 + TypeScript + Tailwind CSS)**:
+   - Customers and operators interact with the **Modern E-Commerce Storefront** (`:3000` / `:5173`) inspired by Amazon & AWS Console UX.
+   - Live **Slide-over Cart Drawer** syncs session state to Redis in real time with an active 3600-second sliding TTL.
+   - Dynamic **Hybrid Recommendation Hub** renders:
+     - *Frequently Bought Together*: FP-Growth association rules with real-time confidence and lift indicators.
+     - *Personalized For You*: PyTorch NCF neural network latent similarity scores per user profile.
+     - *Dual-Signal Hybrid View*: Real-time weighted ensemble with sub-5ms serving latency benchmark.
+   - Built-in **AWS CloudWatch Stream Telemetry Dashboard** monitors Kafka event rates (`view` $\rightarrow$ `cart` $\rightarrow$ `purchase`) and Redis feature store latencies.
+
 
 2. **Real-Time Event Streaming & Serving (Sub-5ms)**:
    - High-velocity clickstream events (`view`, `add_to_cart`, `purchase`) are ingested into **Apache Kafka** topic `ecom.events.raw`, keyed by `user_id` for deterministic partition ordering.
@@ -354,7 +362,73 @@ Content-Type: application/json
 
 ---
 
-## 10. Kubernetes Deployment
+## 10. Modern React + TypeScript Storefront
+
+The user-facing storefront is crafted with React 19, TypeScript, and Tailwind CSS v4, drawing design inspiration from Amazon and the AWS Management Console:
+
+```bash
+# Navigate to frontend directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start development server on port 5173
+npm run dev
+
+# Or build production static assets
+npm run build
+```
+
+Production multi-stage Docker container is also ready:
+```bash
+docker build -t recsys-frontend:latest frontend/
+```
+
+---
+
+## 11. Automated Test Suite (pytest)
+
+The platform features an automated test suite verifying API contracts, Redis feature caching, ML inference, and streaming consumption:
+
+```bash
+# Run all tests with pytest
+python -m pytest tests/ -v
+
+# Run with JUnit XML generation for CI reporting
+python -m pytest tests/ --junitxml=test-reports/junit-results.xml
+```
+
+### Test Coverage Highlights:
+- **`tests/test_api.py`**: Validates FastAPI serving endpoints (`/health`, `/cart/add`, `/cart/{id}`, `/recommend/cart/{id}`, `/recommend/user/{id}`, `/recommend/hybrid`), payload validation, and custom latency response headers (`x-response-time-ms`).
+- **`tests/test_fpgrowth_mlops.py`**: Verifies FP-Growth association rule generation, support/confidence metric thresholds, and bulk pipeline synchronization into the Redis feature store.
+- **`tests/test_ncf_model.py`**: Verifies PyTorch Neural Collaborative Filtering forward-pass tensor shapes, sigmoid-bounded prediction outputs, top-K candidate sorting, and model checkpoint integrity.
+- **`tests/test_streaming_consumer.py`**: Tests Kafka JSON clickstream schema compliance, atomic session cart accumulation with 3600-second TTLs, and cart clearing upon checkout.
+
+---
+
+## 12. Jenkins Declarative CI/CD Pipeline
+
+The project includes an enterprise-grade `Jenkinsfile` orchestrating the complete MLOps and microservices delivery lifecycle:
+
+```
+[1. Diagnostic & Setup] ➔ [2. Parallel Linting] ➔ [3. Automated Testing (pytest)]
+          ➔ [4. ML Artifact & Model Gate] ➔ [5. Optional Model Retrain]
+          ➔ [6. Docker Multi-Build] ➔ [7. Security Audit (Trivy)]
+          ➔ [8. Deployment Rollout] ➔ [9. Latency SLA Verification (< 5ms)]
+```
+
+### Pipeline Capabilities:
+1. **Quality Gates**: Enforces Python `flake8` and TypeScript `tsc` checks.
+2. **Automated Testing**: Executes 17 unit & integration tests and publishes JUnit XML test reports.
+3. **MLOps Validation**: Verifies `models/ncf_model.pt` weights and `fpgrowth_rules.json` rule counts before promoting to staging.
+4. **Conditional Retraining**: Supports automated re-mining and retraining directly via parameterized pipeline execution (`RETRAIN_MODELS=true`).
+5. **Multi-Container Packaging**: Builds and tags Docker images for Backend, Cart Session Consumer, and Nginx-hosted Frontend.
+6. **Continuous Deployment**: Rolling restart to Kubernetes (`kubectl`) or Docker Compose staging with post-deployment sub-5ms latency verification.
+
+---
+
+## 13. Kubernetes Deployment
 
 To deploy the entire platform onto an existing Kubernetes cluster:
 ```bash
@@ -367,7 +441,7 @@ kubectl get pods -n recsys-platform
 
 ---
 
-## 11. Diagrams-as-Code
+## 14. Diagrams-as-Code
 
 The high-level architecture diagram is programmatically maintained using Python's `diagrams` library:
 ```bash
@@ -377,7 +451,7 @@ This updates [imgs/architecture.png](imgs/architecture.png) and ensures system d
 
 ---
 
-## 12. License & Acknowledgements
+## 15. License & Acknowledgements
 
 - **License**: MIT License
 - **Dataset**: [Kaggle UCI Online Retail II](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci)

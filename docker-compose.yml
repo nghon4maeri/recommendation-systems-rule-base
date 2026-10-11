@@ -153,6 +153,19 @@ services:
     command: python streaming/consumers/cart_session_consumer.py
     volumes:
       - ./streaming:/app/streaming
+  # ----------------------------------------------------
+  # 7. MODERN REACT TYPESCRIPT FRONTEND (E-COMMERCE UI)
+  # ----------------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: recsys_frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
     networks:
       - data-platform-net
 
@@ -164,3 +177,4 @@ volumes:
   redis_data:
   minio_data:
   pg_data:
+

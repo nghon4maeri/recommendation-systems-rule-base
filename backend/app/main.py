@@ -260,18 +260,32 @@ def recommend_by_item(item: str = Query(..., description="Item description name"
     }
 
 
-@app.post("/recommend/hybrid", response_model=HybridRecommendResponse)
-def recommend_hybrid(payload: HybridRequest):
+@app.api_route("/recommend/hybrid", methods=["GET", "POST"], response_model=HybridRecommendResponse)
+def recommend_hybrid(
+    request: Request,
+    payload: Optional[HybridRequest] = None,
+    user_id: Optional[int] = Query(default=None),
+    session_id: Optional[str] = Query(default=None),
+    top_k: int = Query(default=5, ge=1, le=20),
+    alpha: float = Query(default=0.6, ge=0.0, le=1.0),
+):
     """
     Ensemble hybrid recommendation combining short-term cart signals with long-term user taste profile.
+    Supports both POST JSON payload and GET Query parameters.
     """
     if not recommender_service:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail="Service not ready")
 
+    target_user = payload.user_id if payload else (user_id if user_id is not None else 13089)
+    target_session = payload.session_id if payload else session_id
+    target_top_k = payload.top_k if payload else top_k
+    target_alpha = payload.alpha if payload else alpha
+
     result = recommender_service.recommend_hybrid(
-        user_id=payload.user_id,
-        session_id=payload.session_id,
-        top_k=payload.top_k,
-        alpha=payload.alpha,
+        user_id=target_user,
+        session_id=target_session,
+        top_k=target_top_k,
+        alpha=target_alpha,
     )
     return HybridRecommendResponse(**result)
+

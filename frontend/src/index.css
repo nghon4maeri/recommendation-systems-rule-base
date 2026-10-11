@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --aws-dark-navy: #131921;
+    --aws-navy: #232f3e;
+    --aws-orange: #ff9900;
+    --aws-orange-hover: #fa8900;
+    --aws-blue-accent: #007185;
+    --aws-light-bg: #f8f9fa;
+  }
+
+  body {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars for dashboard widgets */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5cbd5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9aa5b5;
+}

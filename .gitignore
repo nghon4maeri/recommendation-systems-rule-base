@@ -1,12 +1,23 @@
 # Logs & Execution
 logs/
+**/logs/
 *.log
+*.log.*
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .pytest_cache/
 .coverage
+coverage/
+htmlcov/
+test-reports/
+reports/
+
+# Frontend dependencies & build artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
 
 # Database & Container Data
 postgres_data/
@@ -35,3 +46,5 @@ tools/
 
 # Airflow runtime logs
 airflow/logs/
+airflow/airflow.cfg
+airflow/webserver_config.py
