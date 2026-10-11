@@ -147,15 +147,13 @@ def generate_architecture_diagram(output_dir: Path) -> Path:
     generated_png = output_dir / "architecture.png"
     print(f"Architecture diagram generated successfully at: {generated_png}")
 
-    # Copy to root and imgs/ for README referencing
-    root_png = PROJECT_ROOT / "architecture.png"
+    # Copy to imgs/ for README referencing
     imgs_png = PROJECT_ROOT / "imgs" / "architecture.png"
     imgs_png.parent.mkdir(parents=True, exist_ok=True)
 
     if generated_png.exists():
-        shutil.copy(generated_png, root_png)
         shutil.copy(generated_png, imgs_png)
-        print(f"Copied architecture diagram to: {root_png} and {imgs_png}")
+        print(f"Copied architecture diagram to: {imgs_png}")
 
     return generated_png
 

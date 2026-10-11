@@ -31,7 +31,7 @@ Originally developed as a local batch proof-of-concept running on static CSV fil
 ## 2. High-Level System Architecture
 
 <p align="center">
-  <img src="architecture.png" alt="Enterprise Hybrid Recommender Platform Architecture" width="100%"/>
+  <img src="imgs/architecture.png" alt="Enterprise Hybrid Recommender Platform Architecture" width="100%"/>
 </p>
 
 ### 🔄 End-to-End Data Flow
@@ -96,7 +96,6 @@ recommendation-systems-rule-base/
 │   │   ├── lakehouse_elt_dag.py               # Daily ELT DAG: dbt staging, marts & data quality assertions
 │   │   └── retrain_recommender_dag.py         # Weekly MLOps DAG: retrain FP-Growth & NCF, sync Redis
 │   └── docker-compose-airflow.yml             # Standalone Airflow 2.8 stack (Webserver, Scheduler, Postgres)
-├── architecture.png                            # High-level architecture diagram (Diagrams-as-Code)
 ├── backend/                                    # Production FastAPI Serving Gateway
 │   ├── app/
 │   │   ├── core/config.py                     # Environment settings, Redis pool configuration, CORS
@@ -122,6 +121,8 @@ recommendation-systems-rule-base/
 │   └── dbt_project.yml
 ├── docs/                                       # Technical Documentation & Automation
 │   └── generate_architecture.py               # Python Diagrams-as-Code script to generate architecture.png
+├── imgs/                                       # Architecture & Documentation Diagrams
+│   └── architecture.png                       # High-level architecture diagram (Diagrams-as-Code)
 ├── k8s/                                        # Cloud-Native Kubernetes Manifests
 │   ├── kafka/kafka-cluster.yaml               # Strimzi Kafka 3-broker cluster & KafkaTopic CRDs
 │   ├── redis/redis-deployment.yaml            # Redis Feature Store Deployment & Service
@@ -372,7 +373,7 @@ The high-level architecture diagram is programmatically maintained using Python'
 ```bash
 python docs/generate_architecture.py
 ```
-This updates [architecture.png](architecture.png) and ensures system documentation never drifts from codebase reality.
+This updates [imgs/architecture.png](imgs/architecture.png) and ensures system documentation never drifts from codebase reality.
 
 ---
 
