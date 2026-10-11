@@ -15,3 +15,8 @@ build/
 .eggs/
 .csv
 *.egg-info/
+**/logs/
+*.log
+**/target/
+**/postgres_data/
+**/node_modules/

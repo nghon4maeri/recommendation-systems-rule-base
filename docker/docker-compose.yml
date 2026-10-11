@@ -1,53 +1,101 @@
+# filepath: docker/docker-compose.yml
+# ==============================================================================
+# Standalone Docker Compose: Serving Layer & Feature Store
+# ==============================================================================
 version: "3.9"
 
 services:
+  # ----------------------------------------------------
+  # 1. Relational Metadata Store (PostgreSQL)
+  # ----------------------------------------------------
   db:
-    image: postgres:15
+    image: postgres:15-alpine
     container_name: rs_postgres
-    restart: always
+    restart: unless-stopped
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: abc123
-      POSTGRES_DB: fp_growth_mba
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-abc123password}
+      POSTGRES_DB: ${POSTGRES_DB:-fp_growth_mba}
     ports:
-      - "5432:5432"
+      - "${POSTGRES_PORT:-5432}:5432"
     volumes:
-      - ./db/initdb.d:/docker-entrypoint-initdb.d
-      - ../data:/data
-      - ./postgres_data:/var/lib/postgresql/data
+      - ./db/initdb.d:/docker-entrypoint-initdb.d:ro
+      - ../data:/data:ro
+      - postgres_cluster_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-fp_growth_mba}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - recsys_net
 
+  # ----------------------------------------------------
+  # 2. In-Memory Feature Store & Session Cache (Redis)
+  # ----------------------------------------------------
+  redis:
+    image: redis:7.2-alpine
+    container_name: rs_redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_feature_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks:
+      - recsys_net
+
+  # ----------------------------------------------------
+  # 3. FastAPI Serving Gateway Microservice
+  # ----------------------------------------------------
   backend:
     build:
       context: ..
       dockerfile: docker/Dockerfile.backend
-    image: nhnammldlnlpcvrs/rs_fpgrowth-backend:latest
+    image: rs_fpgrowth-backend:latest
     container_name: rs_backend-container
-    restart: always
+    restart: unless-stopped
     environment:
-      DATABASE_URL: postgresql://postgres:abc123@db:5432/fp_growth_mba
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-abc123password}@db:5432/${POSTGRES_DB:-fp_growth_mba}
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
       DATA_PATH: /app/data
     ports:
-      - "8000:8000"
+      - "${BACKEND_PORT:-8000}:8000"
     volumes:
       - ../backend:/app/backend
       - ../data:/app/data
       - ../models:/app/models
-      - ../logs:/app/logs
     depends_on:
-      - db
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - recsys_net
 
+  # ----------------------------------------------------
+  # 4. Streamlit Interactive Dashboard UI
+  # ----------------------------------------------------
   ui:
     build:
       context: ..
       dockerfile: docker/Dockerfile.ui
-    image: nhnammldlnlpcvrs/rs_fpgrowth-ui:latest
+    image: rs_fpgrowth-ui:latest
     container_name: rs_ui-container
-    restart: always
+    restart: unless-stopped
     environment:
       API_URL: http://backend:8000
       DATA_PATH: /app/data
     ports:
-      - "8501:8501"
+      - "${UI_PORT:-8501}:8501"
     volumes:
       - ../ui:/app/ui
       - ../data:/app/data
@@ -55,3 +103,13 @@ services:
       - backend
     command: >
       sh -c "streamlit run ui/streamlit_app.py --server.port=8501 --server.address=0.0.0.0"
+    networks:
+      - recsys_net
+
+networks:
+  recsys_net:
+    driver: bridge
+
+volumes:
+  postgres_cluster_data:
+  redis_feature_data:
