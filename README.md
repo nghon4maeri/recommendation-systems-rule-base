@@ -99,60 +99,16 @@ All API endpoints and training routines were benchmarked on a local production-g
 
 ```text
 recommendation-systems-rule-base/
-├── airflow/                                    # Apache Airflow Orchestration & Workflows
-│   ├── dags/
-│   │   ├── lakehouse_elt_dag.py               # Daily ELT DAG: dbt staging, marts & data quality assertions
-│   │   └── retrain_recommender_dag.py         # Weekly MLOps DAG: retrain FP-Growth & NCF, sync Redis
-│   └── docker-compose-airflow.yml             # Standalone Airflow 2.8 stack (Webserver, Scheduler, Postgres)
-├── backend/                                    # Production FastAPI Serving Gateway
-│   ├── app/
-│   │   ├── core/config.py                     # Environment settings, Redis pool configuration, CORS
-│   │   ├── models/schemas.py                  # Pydantic schemas for requests, responses & carts
-│   │   ├── services/recommender.py            # Hybrid recommendation engine (Redis + In-Memory fallback)
-│   │   └── main.py                            # FastAPI entrypoint, lifespan handlers, REST endpoints
-│   ├── Dockerfile                             # Multi-stage container build
-│   └── Dockerfile.backend                     # Container specification for backend service
-├── data/                                       # Local Lakehouse & Model Artifact Storage
-│   ├── raw_kaggle/                            # Download directory for Kaggle dataset (.gitkeep)
-│   ├── lakehouse/                             # Partitioned Parquet lakehouse (real_transactions.parquet)
-│   └── models/                                # Serialized models (fpgrowth_rules.json, rules.csv)
-├── data_pipeline/                              # Real Data Ingestion & Stream Replayer
-│   ├── kaggle_stream_producer.py              # Kaggle ingestion, reverse funnel augmentation & Kafka producer
-│   ├── ingest_kaggle_data.py                  # Kaggle API downloader and cleaner
-│   └── config.py                              # Data pipeline configuration
-├── dbt_project/                                # dbt Data Warehouse Models
-│   ├── models/
-│   │   ├── staging/stg_online_retail.sql      # Raw log cleansing and schema casting
-│   │   └── marts/
-│   │       ├── transaction_fpgrowth.sql       # Basket-level transaction aggregation
-│   │       └── user_item_dl.sql               # User-item distinct interaction matrix
-│   └── dbt_project.yml
-├── docs/                                       # Technical Documentation & Automation
-│   └── generate_architecture.py               # Python Diagrams-as-Code script to generate architecture.png
-├── imgs/                                       # Architecture & Documentation Diagrams
-│   └── architecture.png                       # High-level architecture diagram (Diagrams-as-Code)
-├── k8s/                                        # Cloud-Native Kubernetes Manifests
-│   ├── kafka/kafka-cluster.yaml               # Strimzi Kafka 3-broker cluster & KafkaTopic CRDs
-│   ├── redis/redis-deployment.yaml            # Redis Feature Store Deployment & Service
-│   ├── backend/backend-deployment.yaml        # FastAPI Deployment, Service & HPA Autoscaler
-│   ├── airflow/airflow-deployment.yaml        # Airflow Webserver, Scheduler & Postgres StatefulSet
-│   ├── ui/ui-deployment.yaml                  # Streamlit Web UI Deployment & Service
-│   ├── ingress.yaml                           # NGINX Ingress Controller routing rules
-│   └── kustomization.yaml                     # Kustomize root manifest
-├── mlops/                                      # MLOps Pipelines & Feature Store Sync
-│   ├── train_fpgrowth.py                      # Frequent pattern mining with mlxtend FP-Growth
-│   ├── train_ncf.py                           # PyTorch Neural Collaborative Filtering trainer (CUDA)
-│   └── sync_redis_store.py                    # Atomic pipeline synchronizer to Redis
-├── models/
-│   └── ncf_model.pt                           # Serialized PyTorch NCF neural checkpoint (3.08 MB)
-├── streaming/                                  # Real-Time Stream Consumers
-│   ├── consumers/cart_session_consumer.py     # Kafka consumer aggregating active carts into Redis
-│   └── config.py                              # Centralized streaming parameters
-├── ui/                                         # Frontend Interactive Dashboard
-│   ├── streamlit_app.py                       # Live Cart & Hybrid Suggestions Streamlit application
-│   └── style.css                              # Custom CSS styling
-├── docker-compose.yml                          # Core infrastructure stack (Kafka, Redis, Postgres, MinIO)
-└── requirements.txt                            # Pinned production Python dependencies
+├── airflow/ # Apache Airflow Orchestration & Workflows
+├── backend/ # Production FastAPI Serving Gateway
+├── data/ # Local Lakehouse & Model Artifact Storage
+├── data_pipeline/ # Real Data Ingestion & Stream Replayer
+├── dbt_project/ # dbt Data Warehouse Models
+├── k8s/ # Cloud-Native Kubernetes Manifests
+├── mlops/ # MLOps Pipelines & Feature Store Sync
+├── streaming/ # Real-Time Stream Consumers
+├── docker-compose.yml # Core infrastructure stack (Kafka, Redis, Postgres,MinIO)
+└── requirements.txt   # Pinned production Python dependencies
 ```
 
 ---
