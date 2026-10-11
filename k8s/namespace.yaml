@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: recsys-platform
+  labels:
+    app.kubernetes.io/name: recsys-platform
+    environment: production

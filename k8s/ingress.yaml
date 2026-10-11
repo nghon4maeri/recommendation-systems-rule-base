@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: recsys-ingress
+  namespace: recsys-platform
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "120"
+spec:
+  rules:
+    - host: recsys.local
+      http:
+        paths:
+          - path: /api(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: recsys-backend-service
+                port:
+                  number: 8000
+          - path: /()(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: recsys-ui-service
+                port:
+                  number: 8501

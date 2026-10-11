@@ -1,10 +1,37 @@
+# Logs & Execution
 logs/
+*.log
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
 
+# Database & Container Data
 postgres_data/
+airflow_postgres_data/
+docker/postgres_data/
 
+# Notebooks & Environments
 .ipynb_checkpoints/
+.venv/
+venv/
+env/
 
+# Configuration & Secrets
 .user.yml
 profiles.yml
+.env
+
+# Large Raw Datasets (Auto-downloaded via data_pipeline/ingest_kaggle_data.py)
+data/raw_kaggle/*.csv
+data/raw_kaggle/*.zip
+data/lakehouse/transactions_partitioned/
+data/mock_test/
+
+# Local Tools & Binaries
+tools/
+
+# Airflow runtime logs
+airflow/logs/

@@ -1,0 +1,2616 @@
+{
+  "home building block word": [
+    {
+      "consequent": "love building block word",
+      "confidence": 0.4304,
+      "lift": 9.8521,
+      "support": 0.0232
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3231,
+      "lift": 2.2648,
+      "support": 0.0174
+    }
+  ],
+  "love building block word": [
+    {
+      "consequent": "home building block word",
+      "confidence": 0.5307,
+      "lift": 9.8521,
+      "support": 0.0232
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3653,
+      "lift": 2.5605,
+      "support": 0.016
+    }
+  ],
+  "chocolate hot water bottle": [
+    {
+      "consequent": "hot water bottle tea and sympathy",
+      "confidence": 0.4309,
+      "lift": 11.2952,
+      "support": 0.0183
+    },
+    {
+      "consequent": "scottie dog hot water bottle",
+      "confidence": 0.3398,
+      "lift": 7.9276,
+      "support": 0.0144
+    },
+    {
+      "consequent": "hot water bottle i am so poorly",
+      "confidence": 0.3329,
+      "lift": 13.8615,
+      "support": 0.0141
+    }
+  ],
+  "scottie dog hot water bottle": [
+    {
+      "consequent": "chocolate hot water bottle",
+      "confidence": 0.3365,
+      "lift": 7.9276,
+      "support": 0.0144
+    },
+    {
+      "consequent": "hot water bottle tea and sympathy",
+      "confidence": 0.254,
+      "lift": 6.6577,
+      "support": 0.0109
+    },
+    {
+      "consequent": "retrospot heart hot water bottle",
+      "confidence": 0.2374,
+      "lift": 9.8876,
+      "support": 0.0102
+    }
+  ],
+  "hot water bottle tea and sympathy": [
+    {
+      "consequent": "chocolate hot water bottle",
+      "confidence": 0.4795,
+      "lift": 11.2952,
+      "support": 0.0183
+    },
+    {
+      "consequent": "scottie dog hot water bottle",
+      "confidence": 0.2854,
+      "lift": 6.6577,
+      "support": 0.0109
+    }
+  ],
+  "jumbo bag pink vintage paisley": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.4275,
+      "lift": 5.6017,
+      "support": 0.0154
+    },
+    {
+      "consequent": "jumbo shopper vintage red paisley",
+      "confidence": 0.3923,
+      "lift": 7.9201,
+      "support": 0.0141
+    },
+    {
+      "consequent": "jumbo bag strawberry",
+      "confidence": 0.3636,
+      "lift": 8.1468,
+      "support": 0.0131
+    },
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.3448,
+      "lift": 6.8269,
+      "support": 0.0124
+    },
+    {
+      "consequent": "jumbo  bag baroque black white",
+      "confidence": 0.2989,
+      "lift": 7.0271,
+      "support": 0.0108
+    },
+    {
+      "consequent": "jumbo bag scandinavian paisley",
+      "confidence": 0.2809,
+      "lift": 13.2622,
+      "support": 0.0101
+    }
+  ],
+  "jumbo bag scandinavian paisley": [
+    {
+      "consequent": "jumbo bag pink vintage paisley",
+      "confidence": 0.4777,
+      "lift": 13.2622,
+      "support": 0.0101
+    }
+  ],
+  "lunch bag cars blue": [
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.4133,
+      "lift": 7.029,
+      "support": 0.0219
+    },
+    {
+      "consequent": "lunch bag spaceboy design",
+      "confidence": 0.3887,
+      "lift": 7.0314,
+      "support": 0.0206
+    },
+    {
+      "consequent": "lunch bag woodland",
+      "confidence": 0.3854,
+      "lift": 8.2576,
+      "support": 0.0204
+    },
+    {
+      "consequent": "lunch bag red retrospot",
+      "confidence": 0.2956,
+      "lift": 6.5963,
+      "support": 0.0156
+    },
+    {
+      "consequent": "lunch bag pink polkadot",
+      "confidence": 0.2755,
+      "lift": 8.4901,
+      "support": 0.0146
+    },
+    {
+      "consequent": "lunch bag suki  design",
+      "confidence": 0.2326,
+      "lift": 7.3471,
+      "support": 0.0123
+    },
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.2276,
+      "lift": 2.9816,
+      "support": 0.012
+    },
+    {
+      "consequent": "lunch bag suki design",
+      "confidence": 0.2175,
+      "lift": 8.2014,
+      "support": 0.0115
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2136,
+      "lift": 1.4972,
+      "support": 0.0113
+    },
+    {
+      "consequent": "lunch bag red spotty",
+      "confidence": 0.208,
+      "lift": 6.6588,
+      "support": 0.011
+    },
+    {
+      "consequent": "lunch bag dolly girl design",
+      "confidence": 0.203,
+      "lift": 7.9007,
+      "support": 0.0107
+    }
+  ],
+  "lunch bag red spotty": [
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.3805,
+      "lift": 6.4724,
+      "support": 0.0119
+    },
+    {
+      "consequent": "lunch bag pink retrospot",
+      "confidence": 0.372,
+      "lift": 17.2995,
+      "support": 0.0116
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.3522,
+      "lift": 6.6588,
+      "support": 0.011
+    },
+    {
+      "consequent": "lunch bag suki  design",
+      "confidence": 0.3343,
+      "lift": 10.5601,
+      "support": 0.0104
+    },
+    {
+      "consequent": "lunch bag woodland",
+      "confidence": 0.3267,
+      "lift": 7.0006,
+      "support": 0.0102
+    }
+  ],
+  "lunch bag woodland": [
+    {
+      "consequent": "lunch bag spaceboy design",
+      "confidence": 0.4589,
+      "lift": 8.3008,
+      "support": 0.0214
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.4368,
+      "lift": 8.2576,
+      "support": 0.0204
+    },
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.4216,
+      "lift": 7.1709,
+      "support": 0.0197
+    },
+    {
+      "consequent": "lunch bag red retrospot",
+      "confidence": 0.3224,
+      "lift": 7.1939,
+      "support": 0.015
+    },
+    {
+      "consequent": "lunch bag pink polkadot",
+      "confidence": 0.2377,
+      "lift": 7.324,
+      "support": 0.0111
+    },
+    {
+      "consequent": "lunch bag suki  design",
+      "confidence": 0.2326,
+      "lift": 7.3486,
+      "support": 0.0109
+    },
+    {
+      "consequent": "lunch bag dolly girl design",
+      "confidence": 0.2257,
+      "lift": 8.7822,
+      "support": 0.0105
+    },
+    {
+      "consequent": "lunch bag red spotty",
+      "confidence": 0.2187,
+      "lift": 7.0006,
+      "support": 0.0102
+    }
+  ],
+  "red hanging heart t-light holder": [
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.7087,
+      "lift": 4.9673,
+      "support": 0.034
+    }
+  ],
+  "white hanging heart t-light holder": [
+    {
+      "consequent": "red hanging heart t-light holder",
+      "confidence": 0.2384,
+      "lift": 4.9673,
+      "support": 0.034
+    }
+  ],
+  "victorian glass hanging t-light": [
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2582,
+      "lift": 1.81,
+      "support": 0.0109
+    }
+  ],
+  "60 teatime fairy cake cases": [
+    {
+      "consequent": "pack of 60 pink paisley cake cases",
+      "confidence": 0.4172,
+      "lift": 8.9683,
+      "support": 0.0217
+    },
+    {
+      "consequent": "pack of 60 dinosaur cake cases",
+      "confidence": 0.3265,
+      "lift": 9.7777,
+      "support": 0.017
+    },
+    {
+      "consequent": "72 sweetheart fairy cake cases",
+      "confidence": 0.3237,
+      "lift": 9.3382,
+      "support": 0.0168
+    },
+    {
+      "consequent": "pack of 72 retro spot cake cases",
+      "confidence": 0.271,
+      "lift": 7.9251,
+      "support": 0.0141
+    },
+    {
+      "consequent": "pack of 72 skull cake cases",
+      "confidence": 0.2602,
+      "lift": 7.6564,
+      "support": 0.0135
+    },
+    {
+      "consequent": "pack of 72 retrospot cake cases",
+      "confidence": 0.2466,
+      "lift": 6.201,
+      "support": 0.0128
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2319,
+      "lift": 1.6252,
+      "support": 0.0121
+    },
+    {
+      "consequent": "pack of 60 spaceboy cake cases",
+      "confidence": 0.2313,
+      "lift": 8.6155,
+      "support": 0.012
+    }
+  ],
+  "pack of 60 pink paisley cake cases": [
+    {
+      "consequent": "60 teatime fairy cake cases",
+      "confidence": 0.4667,
+      "lift": 8.9683,
+      "support": 0.0217
+    },
+    {
+      "consequent": "pack of 60 dinosaur cake cases",
+      "confidence": 0.3094,
+      "lift": 9.2662,
+      "support": 0.0144
+    },
+    {
+      "consequent": "72 sweetheart fairy cake cases",
+      "confidence": 0.298,
+      "lift": 8.5978,
+      "support": 0.0139
+    },
+    {
+      "consequent": "pack of 72 retrospot cake cases",
+      "confidence": 0.2796,
+      "lift": 7.032,
+      "support": 0.013
+    },
+    {
+      "consequent": "pack of 72 retro spot cake cases",
+      "confidence": 0.2594,
+      "lift": 7.5852,
+      "support": 0.0121
+    },
+    {
+      "consequent": "pack of 72 skull cake cases",
+      "confidence": 0.2422,
+      "lift": 7.1276,
+      "support": 0.0113
+    },
+    {
+      "consequent": "pack of 60 spaceboy cake cases",
+      "confidence": 0.2257,
+      "lift": 8.4089,
+      "support": 0.0105
+    },
+    {
+      "consequent": "pack of 60 mushroom cake cases",
+      "confidence": 0.2143,
+      "lift": 10.1896,
+      "support": 0.01
+    }
+  ],
+  "pack of 72 retro spot cake cases": [
+    {
+      "consequent": "60 teatime fairy cake cases",
+      "confidence": 0.4124,
+      "lift": 7.9251,
+      "support": 0.0141
+    },
+    {
+      "consequent": "pack of 60 pink paisley cake cases",
+      "confidence": 0.3529,
+      "lift": 7.5852,
+      "support": 0.0121
+    }
+  ],
+  "blue stripe ceramic drawer knob": [
+    {
+      "consequent": "red stripe ceramic drawer knob",
+      "confidence": 0.627,
+      "lift": 34.6124,
+      "support": 0.0118
+    }
+  ],
+  "red stripe ceramic drawer knob": [
+    {
+      "consequent": "blue stripe ceramic drawer knob",
+      "confidence": 0.6515,
+      "lift": 34.6124,
+      "support": 0.0118
+    },
+    {
+      "consequent": "red spot ceramic drawer knob",
+      "confidence": 0.5733,
+      "lift": 34.273,
+      "support": 0.0104
+    },
+    {
+      "consequent": "white spot red ceramic drawer knob",
+      "confidence": 0.5537,
+      "lift": 30.1289,
+      "support": 0.01
+    }
+  ],
+  "red spot ceramic drawer knob": [
+    {
+      "consequent": "red stripe ceramic drawer knob",
+      "confidence": 0.6208,
+      "lift": 34.273,
+      "support": 0.0104
+    },
+    {
+      "consequent": "white spot red ceramic drawer knob",
+      "confidence": 0.6014,
+      "lift": 32.7224,
+      "support": 0.0101
+    }
+  ],
+  "white spot red ceramic drawer knob": [
+    {
+      "consequent": "red spot ceramic drawer knob",
+      "confidence": 0.5474,
+      "lift": 32.7224,
+      "support": 0.0101
+    },
+    {
+      "consequent": "red stripe ceramic drawer knob",
+      "confidence": 0.5457,
+      "lift": 30.1289,
+      "support": 0.01
+    }
+  ],
+  "wood 2 drawer cabinet white finish": [
+    {
+      "consequent": "wood s/3 cabinet ant white finish",
+      "confidence": 0.4714,
+      "lift": 16.0281,
+      "support": 0.0146
+    },
+    {
+      "consequent": "wooden frame antique white",
+      "confidence": 0.439,
+      "lift": 8.4129,
+      "support": 0.0136
+    },
+    {
+      "consequent": "wooden picture frame white finish",
+      "confidence": 0.4305,
+      "lift": 8.8382,
+      "support": 0.0133
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3981,
+      "lift": 2.7904,
+      "support": 0.0123
+    }
+  ],
+  "wood s/3 cabinet ant white finish": [
+    {
+      "consequent": "wood 2 drawer cabinet white finish",
+      "confidence": 0.4965,
+      "lift": 16.0281,
+      "support": 0.0146
+    },
+    {
+      "consequent": "wooden frame antique white",
+      "confidence": 0.4122,
+      "lift": 7.8991,
+      "support": 0.0121
+    },
+    {
+      "consequent": "wooden picture frame white finish",
+      "confidence": 0.3872,
+      "lift": 7.9489,
+      "support": 0.0114
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3872,
+      "lift": 2.7137,
+      "support": 0.0114
+    }
+  ],
+  "wooden frame antique white": [
+    {
+      "consequent": "wooden picture frame white finish",
+      "confidence": 0.5613,
+      "lift": 11.5249,
+      "support": 0.0293
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3787,
+      "lift": 2.6547,
+      "support": 0.0198
+    },
+    {
+      "consequent": "wood 2 drawer cabinet white finish",
+      "confidence": 0.2606,
+      "lift": 8.4129,
+      "support": 0.0136
+    },
+    {
+      "consequent": "wood s/3 cabinet ant white finish",
+      "confidence": 0.2323,
+      "lift": 7.8991,
+      "support": 0.0121
+    }
+  ],
+  "assorted colour bird ornament": [
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2454,
+      "lift": 1.7198,
+      "support": 0.0191
+    }
+  ],
+  "pink blue felt craft trinket box": [
+    {
+      "consequent": "pink cream felt craft trinket box",
+      "confidence": 0.5711,
+      "lift": 15.8559,
+      "support": 0.0168
+    }
+  ],
+  "pink cream felt craft trinket box": [
+    {
+      "consequent": "pink blue felt craft trinket box",
+      "confidence": 0.4668,
+      "lift": 15.8559,
+      "support": 0.0168
+    }
+  ],
+  "vintage heads and tails card game": [
+    {
+      "consequent": "vintage snap cards",
+      "confidence": 0.5472,
+      "lift": 12.5494,
+      "support": 0.0169
+    }
+  ],
+  "vintage snap cards": [
+    {
+      "consequent": "vintage heads and tails card game",
+      "confidence": 0.3884,
+      "lift": 12.5494,
+      "support": 0.0169
+    }
+  ],
+  "chocolate this way metal sign": [
+    {
+      "consequent": "hand over the chocolate   sign",
+      "confidence": 0.4444,
+      "lift": 11.6335,
+      "support": 0.0105
+    }
+  ],
+  "hand over the chocolate   sign": [
+    {
+      "consequent": "gin + tonic diet metal sign",
+      "confidence": 0.3992,
+      "lift": 9.7921,
+      "support": 0.0153
+    },
+    {
+      "consequent": "cook with wine metal sign",
+      "confidence": 0.3846,
+      "lift": 10.6847,
+      "support": 0.0147
+    },
+    {
+      "consequent": "please one person metal sign",
+      "confidence": 0.3475,
+      "lift": 8.5046,
+      "support": 0.0133
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3019,
+      "lift": 2.1163,
+      "support": 0.0115
+    },
+    {
+      "consequent": "no singing metal sign",
+      "confidence": 0.2911,
+      "lift": 10.1733,
+      "support": 0.0111
+    },
+    {
+      "consequent": "chocolate this way metal sign",
+      "confidence": 0.2749,
+      "lift": 11.6335,
+      "support": 0.0105
+    }
+  ],
+  "painted metal pears assorted": [
+    {
+      "consequent": "assorted colour bird ornament",
+      "confidence": 0.7311,
+      "lift": 9.3835,
+      "support": 0.0154
+    }
+  ],
+  "cook with wine metal sign": [
+    {
+      "consequent": "gin + tonic diet metal sign",
+      "confidence": 0.473,
+      "lift": 11.6003,
+      "support": 0.017
+    },
+    {
+      "consequent": "please one person metal sign",
+      "confidence": 0.4123,
+      "lift": 10.0907,
+      "support": 0.0148
+    },
+    {
+      "consequent": "hand over the chocolate   sign",
+      "confidence": 0.4082,
+      "lift": 10.6847,
+      "support": 0.0147
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2803,
+      "lift": 1.9649,
+      "support": 0.0101
+    }
+  ],
+  "gin + tonic diet metal sign": [
+    {
+      "consequent": "cook with wine metal sign",
+      "confidence": 0.4175,
+      "lift": 11.6003,
+      "support": 0.017
+    },
+    {
+      "consequent": "hand over the chocolate   sign",
+      "confidence": 0.3741,
+      "lift": 9.7921,
+      "support": 0.0153
+    },
+    {
+      "consequent": "please one person metal sign",
+      "confidence": 0.3524,
+      "lift": 8.6245,
+      "support": 0.0144
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2836,
+      "lift": 1.9882,
+      "support": 0.0116
+    },
+    {
+      "consequent": "no singing metal sign",
+      "confidence": 0.2692,
+      "lift": 9.4064,
+      "support": 0.011
+    }
+  ],
+  "no singing metal sign": [
+    {
+      "consequent": "hand over the chocolate   sign",
+      "confidence": 0.3887,
+      "lift": 10.1733,
+      "support": 0.0111
+    },
+    {
+      "consequent": "gin + tonic diet metal sign",
+      "confidence": 0.3835,
+      "lift": 9.4064,
+      "support": 0.011
+    }
+  ],
+  "set/6 red spotty paper cups": [
+    {
+      "consequent": "set/6 red spotty paper plates",
+      "confidence": 0.79,
+      "lift": 38.6967,
+      "support": 0.0144
+    }
+  ],
+  "set/6 red spotty paper plates": [
+    {
+      "consequent": "set/6 red spotty paper cups",
+      "confidence": 0.7066,
+      "lift": 38.6967,
+      "support": 0.0144
+    }
+  ],
+  "edwardian parasol black": [
+    {
+      "consequent": "edwardian parasol natural",
+      "confidence": 0.5324,
+      "lift": 21.1074,
+      "support": 0.0124
+    },
+    {
+      "consequent": "edwardian parasol red",
+      "confidence": 0.4905,
+      "lift": 26.7721,
+      "support": 0.0114
+    }
+  ],
+  "edwardian parasol natural": [
+    {
+      "consequent": "edwardian parasol black",
+      "confidence": 0.4901,
+      "lift": 21.1074,
+      "support": 0.0124
+    }
+  ],
+  "zinc metal heart decoration": [
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3961,
+      "lift": 2.7766,
+      "support": 0.0145
+    }
+  ],
+  "rex cash+carry jumbo shopper": [
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2341,
+      "lift": 1.6407,
+      "support": 0.0127
+    }
+  ],
+  "jumbo bag owls": [
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.4413,
+      "lift": 8.7371,
+      "support": 0.0119
+    },
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.4083,
+      "lift": 5.3504,
+      "support": 0.011
+    }
+  ],
+  "jumbo storage bag suki": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.4282,
+      "lift": 5.61,
+      "support": 0.0216
+    },
+    {
+      "consequent": "jumbo shopper vintage red paisley",
+      "confidence": 0.3236,
+      "lift": 6.5331,
+      "support": 0.0163
+    },
+    {
+      "consequent": "jumbo bag strawberry",
+      "confidence": 0.3218,
+      "lift": 7.2106,
+      "support": 0.0163
+    },
+    {
+      "consequent": "jumbo  bag baroque black white",
+      "confidence": 0.3061,
+      "lift": 7.1949,
+      "support": 0.0155
+    },
+    {
+      "consequent": "jumbo storage bag skulls",
+      "confidence": 0.2687,
+      "lift": 9.1536,
+      "support": 0.0136
+    },
+    {
+      "consequent": "jumbo bag spaceboy design",
+      "confidence": 0.2523,
+      "lift": 8.818,
+      "support": 0.0127
+    },
+    {
+      "consequent": "jumbo bag pink vintage paisley",
+      "confidence": 0.2459,
+      "lift": 6.8269,
+      "support": 0.0124
+    },
+    {
+      "consequent": "jumbo bag owls",
+      "confidence": 0.2348,
+      "lift": 8.7371,
+      "support": 0.0119
+    },
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.2185,
+      "lift": 3.7155,
+      "support": 0.011
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.2091,
+      "lift": 3.9533,
+      "support": 0.0106
+    },
+    {
+      "consequent": "jumbo bag pink polkadot",
+      "confidence": 0.2021,
+      "lift": 6.5059,
+      "support": 0.0102
+    }
+  ],
+  "jumbo bag woodland animals": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.427,
+      "lift": 5.5949,
+      "support": 0.0115
+    },
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.3743,
+      "lift": 7.4113,
+      "support": 0.0101
+    }
+  ],
+  "lunch bag  black skull.": [
+    {
+      "consequent": "lunch bag spaceboy design",
+      "confidence": 0.3884,
+      "lift": 7.0247,
+      "support": 0.0228
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.3718,
+      "lift": 7.029,
+      "support": 0.0219
+    },
+    {
+      "consequent": "lunch bag woodland",
+      "confidence": 0.3347,
+      "lift": 7.1709,
+      "support": 0.0197
+    },
+    {
+      "consequent": "lunch bag red retrospot",
+      "confidence": 0.3041,
+      "lift": 6.7853,
+      "support": 0.0179
+    },
+    {
+      "consequent": "lunch bag pink polkadot",
+      "confidence": 0.2745,
+      "lift": 8.4576,
+      "support": 0.0161
+    },
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.2148,
+      "lift": 2.8139,
+      "support": 0.0126
+    },
+    {
+      "consequent": "lunch bag suki  design",
+      "confidence": 0.2142,
+      "lift": 6.7683,
+      "support": 0.0126
+    },
+    {
+      "consequent": "lunch bag suki design",
+      "confidence": 0.2052,
+      "lift": 7.7378,
+      "support": 0.0121
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2052,
+      "lift": 1.4384,
+      "support": 0.0121
+    },
+    {
+      "consequent": "lunch bag red spotty",
+      "confidence": 0.2022,
+      "lift": 6.4724,
+      "support": 0.0119
+    }
+  ],
+  "strawberry ceramic trinket box": [
+    {
+      "consequent": "sweetheart ceramic trinket box",
+      "confidence": 0.4509,
+      "lift": 13.0741,
+      "support": 0.0241
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2528,
+      "lift": 1.7717,
+      "support": 0.0135
+    }
+  ],
+  "sweetheart ceramic trinket box": [
+    {
+      "consequent": "strawberry ceramic trinket box",
+      "confidence": 0.6989,
+      "lift": 13.0741,
+      "support": 0.0241
+    }
+  ],
+  "jumbo storage bag skulls": [
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.4623,
+      "lift": 9.1536,
+      "support": 0.0136
+    },
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.4191,
+      "lift": 5.4913,
+      "support": 0.0123
+    },
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.3508,
+      "lift": 5.9656,
+      "support": 0.0103
+    }
+  ],
+  "feltcraft doll molly": [
+    {
+      "consequent": "feltcraft doll rosie",
+      "confidence": 0.5057,
+      "lift": 24.8078,
+      "support": 0.0104
+    }
+  ],
+  "feltcraft doll rosie": [
+    {
+      "consequent": "feltcraft doll molly",
+      "confidence": 0.5123,
+      "lift": 24.8078,
+      "support": 0.0104
+    }
+  ],
+  "key fob , back door": [
+    {
+      "consequent": "key fob , shed",
+      "confidence": 0.7235,
+      "lift": 37.4981,
+      "support": 0.0123
+    }
+  ],
+  "key fob , shed": [
+    {
+      "consequent": "key fob , back door",
+      "confidence": 0.6361,
+      "lift": 37.4981,
+      "support": 0.0123
+    }
+  ],
+  "cream heart card holder": [
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.4316,
+      "lift": 3.0253,
+      "support": 0.0143
+    }
+  ],
+  "wooden picture frame white finish": [
+    {
+      "consequent": "wooden frame antique white",
+      "confidence": 0.6015,
+      "lift": 11.5249,
+      "support": 0.0293
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.4022,
+      "lift": 2.819,
+      "support": 0.0196
+    },
+    {
+      "consequent": "wood 2 drawer cabinet white finish",
+      "confidence": 0.2738,
+      "lift": 8.8382,
+      "support": 0.0133
+    },
+    {
+      "consequent": "wood s/3 cabinet ant white finish",
+      "confidence": 0.2338,
+      "lift": 7.9489,
+      "support": 0.0114
+    }
+  ],
+  "jumbo bag strawberry": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.4779,
+      "lift": 6.2613,
+      "support": 0.0213
+    },
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.3642,
+      "lift": 7.2106,
+      "support": 0.0163
+    },
+    {
+      "consequent": "jumbo  bag baroque black white",
+      "confidence": 0.3331,
+      "lift": 7.8305,
+      "support": 0.0149
+    },
+    {
+      "consequent": "jumbo bag pink vintage paisley",
+      "confidence": 0.2935,
+      "lift": 8.1468,
+      "support": 0.0131
+    },
+    {
+      "consequent": "jumbo shopper vintage red paisley",
+      "confidence": 0.2915,
+      "lift": 5.8845,
+      "support": 0.013
+    },
+    {
+      "consequent": "jumbo bag pink polkadot",
+      "confidence": 0.2327,
+      "lift": 7.4892,
+      "support": 0.0104
+    }
+  ],
+  "pack of 60 dinosaur cake cases": [
+    {
+      "consequent": "60 teatime fairy cake cases",
+      "confidence": 0.5088,
+      "lift": 9.7777,
+      "support": 0.017
+    },
+    {
+      "consequent": "pack of 60 pink paisley cake cases",
+      "confidence": 0.4311,
+      "lift": 9.2662,
+      "support": 0.0144
+    },
+    {
+      "consequent": "72 sweetheart fairy cake cases",
+      "confidence": 0.3834,
+      "lift": 11.0603,
+      "support": 0.0128
+    },
+    {
+      "consequent": "pack of 72 skull cake cases",
+      "confidence": 0.3737,
+      "lift": 10.9952,
+      "support": 0.0125
+    },
+    {
+      "consequent": "pack of 60 spaceboy cake cases",
+      "confidence": 0.3551,
+      "lift": 13.2282,
+      "support": 0.0119
+    },
+    {
+      "consequent": "pack of 72 retrospot cake cases",
+      "confidence": 0.2986,
+      "lift": 7.5083,
+      "support": 0.01
+    }
+  ],
+  "pack of 72 skull cake cases": [
+    {
+      "consequent": "60 teatime fairy cake cases",
+      "confidence": 0.3984,
+      "lift": 7.6564,
+      "support": 0.0135
+    },
+    {
+      "consequent": "pack of 60 dinosaur cake cases",
+      "confidence": 0.3672,
+      "lift": 10.9952,
+      "support": 0.0125
+    },
+    {
+      "consequent": "pack of 60 pink paisley cake cases",
+      "confidence": 0.3316,
+      "lift": 7.1276,
+      "support": 0.0113
+    }
+  ],
+  "jumbo  bag baroque black white": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.4397,
+      "lift": 5.7609,
+      "support": 0.0187
+    },
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.3634,
+      "lift": 7.1949,
+      "support": 0.0155
+    },
+    {
+      "consequent": "jumbo bag strawberry",
+      "confidence": 0.3495,
+      "lift": 7.8305,
+      "support": 0.0149
+    },
+    {
+      "consequent": "jumbo shopper vintage red paisley",
+      "confidence": 0.3273,
+      "lift": 6.6083,
+      "support": 0.0139
+    },
+    {
+      "consequent": "jumbo bag pink vintage paisley",
+      "confidence": 0.2531,
+      "lift": 7.0271,
+      "support": 0.0108
+    }
+  ],
+  "set of 3 butterfly cookie cutters": [
+    {
+      "consequent": "set of 3 heart cookie cutters",
+      "confidence": 0.4975,
+      "lift": 17.9036,
+      "support": 0.0119
+    }
+  ],
+  "set of 3 heart cookie cutters": [
+    {
+      "consequent": "set of 3 butterfly cookie cutters",
+      "confidence": 0.4299,
+      "lift": 17.9036,
+      "support": 0.0119
+    }
+  ],
+  "72 sweetheart fairy cake cases": [
+    {
+      "consequent": "60 teatime fairy cake cases",
+      "confidence": 0.486,
+      "lift": 9.3382,
+      "support": 0.0168
+    },
+    {
+      "consequent": "pack of 60 pink paisley cake cases",
+      "confidence": 0.4,
+      "lift": 8.5978,
+      "support": 0.0139
+    },
+    {
+      "consequent": "pack of 60 dinosaur cake cases",
+      "confidence": 0.3694,
+      "lift": 11.0603,
+      "support": 0.0128
+    }
+  ],
+  "strawberry charlotte bag": [
+    {
+      "consequent": "woodland charlotte bag",
+      "confidence": 0.4069,
+      "lift": 12.9992,
+      "support": 0.0119
+    },
+    {
+      "consequent": "charlotte bag suki design",
+      "confidence": 0.3684,
+      "lift": 13.1043,
+      "support": 0.0107
+    },
+    {
+      "consequent": "red retrospot charlotte bag",
+      "confidence": 0.3543,
+      "lift": 13.2247,
+      "support": 0.0103
+    }
+  ],
+  "woodland charlotte bag": [
+    {
+      "consequent": "strawberry charlotte bag",
+      "confidence": 0.3789,
+      "lift": 12.9992,
+      "support": 0.0119
+    },
+    {
+      "consequent": "charlotte bag suki design",
+      "confidence": 0.3685,
+      "lift": 13.1078,
+      "support": 0.0115
+    },
+    {
+      "consequent": "red retrospot charlotte bag",
+      "confidence": 0.3242,
+      "lift": 12.1037,
+      "support": 0.0101
+    }
+  ],
+  "bathroom metal sign": [
+    {
+      "consequent": "toilet metal sign",
+      "confidence": 0.5233,
+      "lift": 24.3647,
+      "support": 0.0166
+    },
+    {
+      "consequent": "kitchen metal sign",
+      "confidence": 0.406,
+      "lift": 25.3422,
+      "support": 0.0129
+    }
+  ],
+  "kitchen metal sign": [
+    {
+      "consequent": "bathroom metal sign",
+      "confidence": 0.8029,
+      "lift": 25.3422,
+      "support": 0.0129
+    },
+    {
+      "consequent": "toilet metal sign",
+      "confidence": 0.663,
+      "lift": 30.8697,
+      "support": 0.0106
+    }
+  ],
+  "toilet metal sign": [
+    {
+      "consequent": "bathroom metal sign",
+      "confidence": 0.772,
+      "lift": 24.3647,
+      "support": 0.0166
+    },
+    {
+      "consequent": "kitchen metal sign",
+      "confidence": 0.4945,
+      "lift": 30.8697,
+      "support": 0.0106
+    }
+  ],
+  "edwardian parasol red": [
+    {
+      "consequent": "edwardian parasol black",
+      "confidence": 0.6216,
+      "lift": 26.7721,
+      "support": 0.0114
+    }
+  ],
+  "hanging heart zinc t-light holder": [
+    {
+      "consequent": "single heart zinc t-light holder",
+      "confidence": 0.4069,
+      "lift": 16.8596,
+      "support": 0.0137
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3234,
+      "lift": 2.2666,
+      "support": 0.0109
+    }
+  ],
+  "pack of 60 mushroom cake cases": [
+    {
+      "consequent": "pack of 60 pink paisley cake cases",
+      "confidence": 0.4741,
+      "lift": 10.1896,
+      "support": 0.01
+    }
+  ],
+  "single heart zinc t-light holder": [
+    {
+      "consequent": "hanging heart zinc t-light holder",
+      "confidence": 0.566,
+      "lift": 16.8596,
+      "support": 0.0137
+    }
+  ],
+  "feltcraft 6 flower friends": [
+    {
+      "consequent": "feltcraft butterfly hearts",
+      "confidence": 0.3564,
+      "lift": 11.7849,
+      "support": 0.0125
+    }
+  ],
+  "feltcraft butterfly hearts": [
+    {
+      "consequent": "feltcraft 6 flower friends",
+      "confidence": 0.4127,
+      "lift": 11.7849,
+      "support": 0.0125
+    }
+  ],
+  "blue harmonica in box": [
+    {
+      "consequent": "red  harmonica in box",
+      "confidence": 0.5018,
+      "lift": 19.4633,
+      "support": 0.0121
+    }
+  ],
+  "red  harmonica in box": [
+    {
+      "consequent": "blue harmonica in box",
+      "confidence": 0.468,
+      "lift": 19.4633,
+      "support": 0.0121
+    }
+  ],
+  "party bunting": [
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2148,
+      "lift": 1.5057,
+      "support": 0.013
+    }
+  ],
+  "blue happy birthday bunting": [
+    {
+      "consequent": "pink happy birthday bunting",
+      "confidence": 0.6992,
+      "lift": 29.2964,
+      "support": 0.0129
+    }
+  ],
+  "pink happy birthday bunting": [
+    {
+      "consequent": "blue happy birthday bunting",
+      "confidence": 0.5402,
+      "lift": 29.2964,
+      "support": 0.0129
+    }
+  ],
+  "postage": [
+    {
+      "consequent": "round snack boxes set of4 woodland",
+      "confidence": 0.2351,
+      "lift": 6.9717,
+      "support": 0.0117
+    }
+  ],
+  "round snack boxes set of4 woodland": [
+    {
+      "consequent": "round snack boxes set of 4 fruits",
+      "confidence": 0.4322,
+      "lift": 14.9797,
+      "support": 0.0146
+    },
+    {
+      "consequent": "postage",
+      "confidence": 0.3482,
+      "lift": 6.9717,
+      "support": 0.0117
+    }
+  ],
+  "round snack boxes set of 4 fruits": [
+    {
+      "consequent": "round snack boxes set of4 woodland",
+      "confidence": 0.5051,
+      "lift": 14.9797,
+      "support": 0.0146
+    }
+  ],
+  "jumbo shopper vintage red paisley": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.3973,
+      "lift": 5.2052,
+      "support": 0.0197
+    },
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.33,
+      "lift": 6.5331,
+      "support": 0.0163
+    },
+    {
+      "consequent": "jumbo bag pink vintage paisley",
+      "confidence": 0.2853,
+      "lift": 7.9201,
+      "support": 0.0141
+    },
+    {
+      "consequent": "jumbo  bag baroque black white",
+      "confidence": 0.2811,
+      "lift": 6.6083,
+      "support": 0.0139
+    },
+    {
+      "consequent": "jumbo bag strawberry",
+      "confidence": 0.2627,
+      "lift": 5.8845,
+      "support": 0.013
+    },
+    {
+      "consequent": "jumbo bag spaceboy design",
+      "confidence": 0.2043,
+      "lift": 7.1389,
+      "support": 0.0101
+    }
+  ],
+  "please one person metal sign": [
+    {
+      "consequent": "cook with wine metal sign",
+      "confidence": 0.3632,
+      "lift": 10.0907,
+      "support": 0.0148
+    },
+    {
+      "consequent": "gin + tonic diet metal sign",
+      "confidence": 0.3516,
+      "lift": 8.6245,
+      "support": 0.0144
+    },
+    {
+      "consequent": "hand over the chocolate   sign",
+      "confidence": 0.3249,
+      "lift": 8.5046,
+      "support": 0.0133
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2845,
+      "lift": 1.994,
+      "support": 0.0116
+    },
+    {
+      "consequent": "ladies & gentlemen metal sign",
+      "confidence": 0.2469,
+      "lift": 9.4259,
+      "support": 0.0101
+    }
+  ],
+  "ladies & gentlemen metal sign": [
+    {
+      "consequent": "please one person metal sign",
+      "confidence": 0.3851,
+      "lift": 9.4259,
+      "support": 0.0101
+    }
+  ],
+  "jumbo bag spaceboy design": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.4505,
+      "lift": 5.903,
+      "support": 0.0129
+    },
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.4454,
+      "lift": 8.818,
+      "support": 0.0127
+    },
+    {
+      "consequent": "jumbo shopper vintage red paisley",
+      "confidence": 0.3536,
+      "lift": 7.1389,
+      "support": 0.0101
+    }
+  ],
+  "lunch bag pink retrospot": [
+    {
+      "consequent": "lunch bag red spotty",
+      "confidence": 0.5405,
+      "lift": 17.2995,
+      "support": 0.0116
+    }
+  ],
+  "lunch bag spaceboy design": [
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.413,
+      "lift": 7.0247,
+      "support": 0.0228
+    },
+    {
+      "consequent": "lunch bag woodland",
+      "confidence": 0.3874,
+      "lift": 8.3008,
+      "support": 0.0214
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.3719,
+      "lift": 7.0314,
+      "support": 0.0206
+    },
+    {
+      "consequent": "lunch bag red retrospot",
+      "confidence": 0.2892,
+      "lift": 6.4541,
+      "support": 0.016
+    },
+    {
+      "consequent": "lunch bag suki  design",
+      "confidence": 0.2721,
+      "lift": 8.5973,
+      "support": 0.015
+    },
+    {
+      "consequent": "lunch bag dolly girl design",
+      "confidence": 0.2689,
+      "lift": 10.4666,
+      "support": 0.0149
+    },
+    {
+      "consequent": "lunch bag pink polkadot",
+      "confidence": 0.2311,
+      "lift": 7.1201,
+      "support": 0.0128
+    },
+    {
+      "consequent": "lunch bag suki design",
+      "confidence": 0.2017,
+      "lift": 7.6054,
+      "support": 0.0112
+    }
+  ],
+  "lunch bag suki  design": [
+    {
+      "consequent": "lunch bag spaceboy design",
+      "confidence": 0.4753,
+      "lift": 8.5973,
+      "support": 0.015
+    },
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.3979,
+      "lift": 6.7683,
+      "support": 0.0126
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.3886,
+      "lift": 7.3471,
+      "support": 0.0123
+    },
+    {
+      "consequent": "lunch bag woodland",
+      "confidence": 0.343,
+      "lift": 7.3486,
+      "support": 0.0109
+    },
+    {
+      "consequent": "lunch bag red spotty",
+      "confidence": 0.3299,
+      "lift": 10.5601,
+      "support": 0.0104
+    }
+  ],
+  "pack of 60 spaceboy cake cases": [
+    {
+      "consequent": "60 teatime fairy cake cases",
+      "confidence": 0.4484,
+      "lift": 8.6155,
+      "support": 0.012
+    },
+    {
+      "consequent": "pack of 60 dinosaur cake cases",
+      "confidence": 0.4418,
+      "lift": 13.2282,
+      "support": 0.0119
+    },
+    {
+      "consequent": "pack of 60 pink paisley cake cases",
+      "confidence": 0.3912,
+      "lift": 8.4089,
+      "support": 0.0105
+    }
+  ],
+  "natural slate heart chalkboard": [
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.2978,
+      "lift": 2.0872,
+      "support": 0.0142
+    }
+  ],
+  "feltcraft cushion butterfly": [
+    {
+      "consequent": "feltcraft cushion rabbit",
+      "confidence": 0.6554,
+      "lift": 32.8143,
+      "support": 0.0131
+    },
+    {
+      "consequent": "feltcraft cushion owl",
+      "confidence": 0.5876,
+      "lift": 25.8351,
+      "support": 0.0118
+    }
+  ],
+  "feltcraft cushion owl": [
+    {
+      "consequent": "feltcraft cushion rabbit",
+      "confidence": 0.5383,
+      "lift": 26.9505,
+      "support": 0.0122
+    },
+    {
+      "consequent": "feltcraft cushion butterfly",
+      "confidence": 0.5175,
+      "lift": 25.8351,
+      "support": 0.0118
+    }
+  ],
+  "feltcraft cushion rabbit": [
+    {
+      "consequent": "feltcraft cushion butterfly",
+      "confidence": 0.6573,
+      "lift": 32.8143,
+      "support": 0.0131
+    },
+    {
+      "consequent": "feltcraft cushion owl",
+      "confidence": 0.613,
+      "lift": 26.9505,
+      "support": 0.0122
+    }
+  ],
+  "baking set 9 piece retrospot": [
+    {
+      "consequent": "baking set spaceboy design",
+      "confidence": 0.3154,
+      "lift": 12.12,
+      "support": 0.016
+    }
+  ],
+  "baking set spaceboy design": [
+    {
+      "consequent": "baking set 9 piece retrospot",
+      "confidence": 0.6168,
+      "lift": 12.12,
+      "support": 0.016
+    }
+  ],
+  "plasters in tin circus parade": [
+    {
+      "consequent": "plasters in tin spaceboy",
+      "confidence": 0.4736,
+      "lift": 13.8883,
+      "support": 0.0154
+    },
+    {
+      "consequent": "plasters in tin woodland animals",
+      "confidence": 0.4455,
+      "lift": 13.7644,
+      "support": 0.0145
+    },
+    {
+      "consequent": "plasters in tin strongman",
+      "confidence": 0.4027,
+      "lift": 15.9664,
+      "support": 0.0131
+    }
+  ],
+  "plasters in tin strongman": [
+    {
+      "consequent": "plasters in tin circus parade",
+      "confidence": 0.5181,
+      "lift": 15.9664,
+      "support": 0.0131
+    },
+    {
+      "consequent": "plasters in tin spaceboy",
+      "confidence": 0.4409,
+      "lift": 12.9294,
+      "support": 0.0111
+    },
+    {
+      "consequent": "plasters in tin woodland animals",
+      "confidence": 0.4152,
+      "lift": 12.8297,
+      "support": 0.0105
+    }
+  ],
+  "plasters in tin spaceboy": [
+    {
+      "consequent": "plasters in tin woodland animals",
+      "confidence": 0.4801,
+      "lift": 14.8351,
+      "support": 0.0164
+    },
+    {
+      "consequent": "plasters in tin circus parade",
+      "confidence": 0.4507,
+      "lift": 13.8883,
+      "support": 0.0154
+    },
+    {
+      "consequent": "plasters in tin vintage paisley",
+      "confidence": 0.3503,
+      "lift": 11.9956,
+      "support": 0.0119
+    },
+    {
+      "consequent": "plasters in tin strongman",
+      "confidence": 0.3261,
+      "lift": 12.9294,
+      "support": 0.0111
+    },
+    {
+      "consequent": "plasters in tin skulls",
+      "confidence": 0.3209,
+      "lift": 12.0207,
+      "support": 0.0109
+    }
+  ],
+  "plasters in tin skulls": [
+    {
+      "consequent": "plasters in tin woodland animals",
+      "confidence": 0.4133,
+      "lift": 12.7696,
+      "support": 0.011
+    },
+    {
+      "consequent": "plasters in tin spaceboy",
+      "confidence": 0.4099,
+      "lift": 12.0207,
+      "support": 0.0109
+    },
+    {
+      "consequent": "plasters in tin vintage paisley",
+      "confidence": 0.3768,
+      "lift": 12.9013,
+      "support": 0.0101
+    }
+  ],
+  "plasters in tin vintage paisley": [
+    {
+      "consequent": "plasters in tin spaceboy",
+      "confidence": 0.4091,
+      "lift": 11.9956,
+      "support": 0.0119
+    },
+    {
+      "consequent": "plasters in tin woodland animals",
+      "confidence": 0.3808,
+      "lift": 11.7669,
+      "support": 0.0111
+    },
+    {
+      "consequent": "plasters in tin skulls",
+      "confidence": 0.3444,
+      "lift": 12.9013,
+      "support": 0.0101
+    }
+  ],
+  "plasters in tin woodland animals": [
+    {
+      "consequent": "plasters in tin spaceboy",
+      "confidence": 0.5059,
+      "lift": 14.8351,
+      "support": 0.0164
+    },
+    {
+      "consequent": "plasters in tin circus parade",
+      "confidence": 0.4467,
+      "lift": 13.7644,
+      "support": 0.0145
+    },
+    {
+      "consequent": "plasters in tin vintage paisley",
+      "confidence": 0.3437,
+      "lift": 11.7669,
+      "support": 0.0111
+    },
+    {
+      "consequent": "plasters in tin skulls",
+      "confidence": 0.3409,
+      "lift": 12.7696,
+      "support": 0.011
+    },
+    {
+      "consequent": "plasters in tin strongman",
+      "confidence": 0.3236,
+      "lift": 12.8297,
+      "support": 0.0105
+    }
+  ],
+  "red retrospot cake stand": [
+    {
+      "consequent": "regency cakestand 3 tier",
+      "confidence": 0.3739,
+      "lift": 3.8801,
+      "support": 0.0108
+    }
+  ],
+  "heart of wicker large": [
+    {
+      "consequent": "heart of wicker small",
+      "confidence": 0.4997,
+      "lift": 9.5753,
+      "support": 0.0256
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3738,
+      "lift": 2.6199,
+      "support": 0.0192
+    }
+  ],
+  "heart of wicker small": [
+    {
+      "consequent": "heart of wicker large",
+      "confidence": 0.4912,
+      "lift": 9.5753,
+      "support": 0.0256
+    },
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.3217,
+      "lift": 2.2545,
+      "support": 0.0168
+    }
+  ],
+  "ivory kitchen scales": [
+    {
+      "consequent": "red kitchen scales",
+      "confidence": 0.4094,
+      "lift": 17.8848,
+      "support": 0.0128
+    }
+  ],
+  "red kitchen scales": [
+    {
+      "consequent": "ivory kitchen scales",
+      "confidence": 0.5593,
+      "lift": 17.8848,
+      "support": 0.0128
+    }
+  ],
+  "jumbo bag red retrospot": [
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.2833,
+      "lift": 5.61,
+      "support": 0.0216
+    },
+    {
+      "consequent": "jumbo bag strawberry",
+      "confidence": 0.2795,
+      "lift": 6.2613,
+      "support": 0.0213
+    },
+    {
+      "consequent": "jumbo shopper vintage red paisley",
+      "confidence": 0.2578,
+      "lift": 5.2052,
+      "support": 0.0197
+    },
+    {
+      "consequent": "jumbo bag pink polkadot",
+      "confidence": 0.2567,
+      "lift": 8.2624,
+      "support": 0.0196
+    },
+    {
+      "consequent": "jumbo  bag baroque black white",
+      "confidence": 0.2451,
+      "lift": 5.7609,
+      "support": 0.0187
+    },
+    {
+      "consequent": "jumbo bag pink vintage paisley",
+      "confidence": 0.2018,
+      "lift": 5.6017,
+      "support": 0.0154
+    }
+  ],
+  "charlotte bag suki design": [
+    {
+      "consequent": "woodland charlotte bag",
+      "confidence": 0.4103,
+      "lift": 13.1078,
+      "support": 0.0115
+    },
+    {
+      "consequent": "red retrospot charlotte bag",
+      "confidence": 0.3872,
+      "lift": 14.4547,
+      "support": 0.0109
+    },
+    {
+      "consequent": "strawberry charlotte bag",
+      "confidence": 0.382,
+      "lift": 13.1043,
+      "support": 0.0107
+    }
+  ],
+  "dolly girl lunch box": [
+    {
+      "consequent": "spaceboy lunch box",
+      "confidence": 0.6733,
+      "lift": 20.6183,
+      "support": 0.0198
+    }
+  ],
+  "spaceboy lunch box": [
+    {
+      "consequent": "dolly girl lunch box",
+      "confidence": 0.607,
+      "lift": 20.6183,
+      "support": 0.0198
+    }
+  ],
+  "wooden heart christmas scandinavian": [
+    {
+      "consequent": "wooden star christmas scandinavian",
+      "confidence": 0.6433,
+      "lift": 32.9868,
+      "support": 0.0138
+    }
+  ],
+  "wooden star christmas scandinavian": [
+    {
+      "consequent": "wooden heart christmas scandinavian",
+      "confidence": 0.7065,
+      "lift": 32.9868,
+      "support": 0.0138
+    },
+    {
+      "consequent": "wooden tree christmas scandinavian",
+      "confidence": 0.5492,
+      "lift": 40.7334,
+      "support": 0.0107
+    }
+  ],
+  "wooden tree christmas scandinavian": [
+    {
+      "consequent": "wooden star christmas scandinavian",
+      "confidence": 0.7943,
+      "lift": 40.7334,
+      "support": 0.0107
+    }
+  ],
+  "lunch bag dolly girl design": [
+    {
+      "consequent": "lunch bag spaceboy design",
+      "confidence": 0.5786,
+      "lift": 10.4666,
+      "support": 0.0149
+    },
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.4305,
+      "lift": 7.3226,
+      "support": 0.0111
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.4179,
+      "lift": 7.9007,
+      "support": 0.0107
+    },
+    {
+      "consequent": "lunch bag red retrospot",
+      "confidence": 0.4122,
+      "lift": 9.1977,
+      "support": 0.0106
+    },
+    {
+      "consequent": "lunch bag woodland",
+      "confidence": 0.4099,
+      "lift": 8.7822,
+      "support": 0.0105
+    }
+  ],
+  "wicker star": [
+    {
+      "consequent": "heart of wicker large",
+      "confidence": 0.4818,
+      "lift": 9.3922,
+      "support": 0.0102
+    }
+  ],
+  "green regency teacup and saucer": [
+    {
+      "consequent": "roses regency teacup and saucer",
+      "confidence": 0.7972,
+      "lift": 25.6629,
+      "support": 0.0219
+    },
+    {
+      "consequent": "pink regency teacup and saucer",
+      "confidence": 0.6706,
+      "lift": 30.6766,
+      "support": 0.0184
+    },
+    {
+      "consequent": "regency cakestand 3 tier",
+      "confidence": 0.5558,
+      "lift": 5.7684,
+      "support": 0.0153
+    }
+  ],
+  "pink regency teacup and saucer": [
+    {
+      "consequent": "green regency teacup and saucer",
+      "confidence": 0.8435,
+      "lift": 30.6766,
+      "support": 0.0184
+    },
+    {
+      "consequent": "roses regency teacup and saucer",
+      "confidence": 0.8057,
+      "lift": 25.9352,
+      "support": 0.0176
+    },
+    {
+      "consequent": "regency cakestand 3 tier",
+      "confidence": 0.5749,
+      "lift": 5.9667,
+      "support": 0.0126
+    }
+  ],
+  "roses regency teacup and saucer": [
+    {
+      "consequent": "green regency teacup and saucer",
+      "confidence": 0.7056,
+      "lift": 25.6629,
+      "support": 0.0219
+    },
+    {
+      "consequent": "pink regency teacup and saucer",
+      "confidence": 0.567,
+      "lift": 25.9352,
+      "support": 0.0176
+    },
+    {
+      "consequent": "regency cakestand 3 tier",
+      "confidence": 0.5508,
+      "lift": 5.7167,
+      "support": 0.0171
+    }
+  ],
+  "feltcraft princess charlotte doll": [
+    {
+      "consequent": "feltcraft princess lola doll",
+      "confidence": 0.6113,
+      "lift": 34.7084,
+      "support": 0.0112
+    }
+  ],
+  "feltcraft princess lola doll": [
+    {
+      "consequent": "feltcraft princess charlotte doll",
+      "confidence": 0.6348,
+      "lift": 34.7084,
+      "support": 0.0112
+    }
+  ],
+  "hand warmer bird design": [
+    {
+      "consequent": "hand warmer owl design",
+      "confidence": 0.5799,
+      "lift": 18.5979,
+      "support": 0.0155
+    },
+    {
+      "consequent": "hand warmer scotty dog design",
+      "confidence": 0.5061,
+      "lift": 18.3074,
+      "support": 0.0135
+    }
+  ],
+  "hand warmer owl design": [
+    {
+      "consequent": "hand warmer scotty dog design",
+      "confidence": 0.5109,
+      "lift": 18.4816,
+      "support": 0.0159
+    },
+    {
+      "consequent": "hand warmer bird design",
+      "confidence": 0.4976,
+      "lift": 18.5979,
+      "support": 0.0155
+    },
+    {
+      "consequent": "hand warmer union jack",
+      "confidence": 0.369,
+      "lift": 15.8717,
+      "support": 0.0115
+    },
+    {
+      "consequent": "hand warmer red retrospot",
+      "confidence": 0.3434,
+      "lift": 17.246,
+      "support": 0.0107
+    }
+  ],
+  "hand warmer scotty dog design": [
+    {
+      "consequent": "hand warmer owl design",
+      "confidence": 0.5763,
+      "lift": 18.4816,
+      "support": 0.0159
+    },
+    {
+      "consequent": "hand warmer bird design",
+      "confidence": 0.4899,
+      "lift": 18.3074,
+      "support": 0.0135
+    },
+    {
+      "consequent": "hand warmer red retrospot",
+      "confidence": 0.365,
+      "lift": 18.3292,
+      "support": 0.0101
+    },
+    {
+      "consequent": "hand warmer union jack",
+      "confidence": 0.3639,
+      "lift": 15.6549,
+      "support": 0.0101
+    }
+  ],
+  "hot water bottle i am so poorly": [
+    {
+      "consequent": "chocolate hot water bottle",
+      "confidence": 0.5885,
+      "lift": 13.8615,
+      "support": 0.0141
+    }
+  ],
+  "paper chain kit 50's christmas": [
+    {
+      "consequent": "paper chain kit vintage christmas",
+      "confidence": 0.4056,
+      "lift": 11.233,
+      "support": 0.02
+    }
+  ],
+  "paper chain kit vintage christmas": [
+    {
+      "consequent": "paper chain kit 50's christmas",
+      "confidence": 0.5547,
+      "lift": 11.233,
+      "support": 0.02
+    }
+  ],
+  "candleholder pink hanging heart": [
+    {
+      "consequent": "white hanging heart t-light holder",
+      "confidence": 0.7327,
+      "lift": 5.1357,
+      "support": 0.0112
+    }
+  ],
+  "lunch bag pink polkadot": [
+    {
+      "consequent": "lunch bag red retrospot",
+      "confidence": 0.5655,
+      "lift": 12.6183,
+      "support": 0.0183
+    },
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.4973,
+      "lift": 8.4576,
+      "support": 0.0161
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.4491,
+      "lift": 8.4901,
+      "support": 0.0146
+    },
+    {
+      "consequent": "lunch bag spaceboy design",
+      "confidence": 0.3936,
+      "lift": 7.1201,
+      "support": 0.0128
+    },
+    {
+      "consequent": "lunch bag woodland",
+      "confidence": 0.3418,
+      "lift": 7.324,
+      "support": 0.0111
+    },
+    {
+      "consequent": "lunch bag suki design",
+      "confidence": 0.3255,
+      "lift": 12.2713,
+      "support": 0.0106
+    }
+  ],
+  "pack of 72 retrospot cake cases": [
+    {
+      "consequent": "pack of 60 pink paisley cake cases",
+      "confidence": 0.3272,
+      "lift": 7.032,
+      "support": 0.013
+    },
+    {
+      "consequent": "60 teatime fairy cake cases",
+      "confidence": 0.3227,
+      "lift": 6.201,
+      "support": 0.0128
+    },
+    {
+      "consequent": "pack of 60 dinosaur cake cases",
+      "confidence": 0.2507,
+      "lift": 7.5083,
+      "support": 0.01
+    }
+  ],
+  "lunch bag red retrospot": [
+    {
+      "consequent": "lunch bag pink polkadot",
+      "confidence": 0.4095,
+      "lift": 12.6183,
+      "support": 0.0183
+    },
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.3989,
+      "lift": 6.7853,
+      "support": 0.0179
+    },
+    {
+      "consequent": "lunch bag spaceboy design",
+      "confidence": 0.3568,
+      "lift": 6.4541,
+      "support": 0.016
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.3489,
+      "lift": 6.5963,
+      "support": 0.0156
+    },
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.3377,
+      "lift": 4.4251,
+      "support": 0.0151
+    },
+    {
+      "consequent": "lunch bag woodland",
+      "confidence": 0.3357,
+      "lift": 7.1939,
+      "support": 0.015
+    },
+    {
+      "consequent": "lunch bag suki design",
+      "confidence": 0.2962,
+      "lift": 11.1701,
+      "support": 0.0133
+    },
+    {
+      "consequent": "lunch bag apple design",
+      "confidence": 0.2561,
+      "lift": 10.0355,
+      "support": 0.0115
+    },
+    {
+      "consequent": "lunch bag dolly girl design",
+      "confidence": 0.2363,
+      "lift": 9.1977,
+      "support": 0.0106
+    }
+  ],
+  "alarm clock bakelike green": [
+    {
+      "consequent": "alarm clock bakelike red",
+      "confidence": 0.6776,
+      "lift": 20.0776,
+      "support": 0.0207
+    },
+    {
+      "consequent": "alarm clock bakelike pink",
+      "confidence": 0.4247,
+      "lift": 18.6724,
+      "support": 0.013
+    },
+    {
+      "consequent": "alarm clock bakelike ivory",
+      "confidence": 0.36,
+      "lift": 19.8443,
+      "support": 0.011
+    }
+  ],
+  "alarm clock bakelike red": [
+    {
+      "consequent": "alarm clock bakelike green",
+      "confidence": 0.6136,
+      "lift": 20.0776,
+      "support": 0.0207
+    },
+    {
+      "consequent": "alarm clock bakelike pink",
+      "confidence": 0.4379,
+      "lift": 19.2539,
+      "support": 0.0148
+    },
+    {
+      "consequent": "alarm clock bakelike ivory",
+      "confidence": 0.3715,
+      "lift": 20.4762,
+      "support": 0.0125
+    },
+    {
+      "consequent": "alarm clock bakelike orange",
+      "confidence": 0.3051,
+      "lift": 20.6819,
+      "support": 0.0103
+    }
+  ],
+  "alarm clock bakelike orange": [
+    {
+      "consequent": "alarm clock bakelike red",
+      "confidence": 0.698,
+      "lift": 20.6819,
+      "support": 0.0103
+    }
+  ],
+  "alarm clock bakelike ivory": [
+    {
+      "consequent": "alarm clock bakelike red",
+      "confidence": 0.6911,
+      "lift": 20.4762,
+      "support": 0.0125
+    },
+    {
+      "consequent": "alarm clock bakelike green",
+      "confidence": 0.6065,
+      "lift": 19.8443,
+      "support": 0.011
+    }
+  ],
+  "red retrospot charlotte bag": [
+    {
+      "consequent": "charlotte bag pink polkadot",
+      "confidence": 0.4372,
+      "lift": 24.701,
+      "support": 0.0117
+    },
+    {
+      "consequent": "charlotte bag suki design",
+      "confidence": 0.4064,
+      "lift": 14.4547,
+      "support": 0.0109
+    },
+    {
+      "consequent": "strawberry charlotte bag",
+      "confidence": 0.3855,
+      "lift": 13.2247,
+      "support": 0.0103
+    },
+    {
+      "consequent": "woodland charlotte bag",
+      "confidence": 0.3789,
+      "lift": 12.1037,
+      "support": 0.0101
+    }
+  ],
+  "alarm clock bakelike pink": [
+    {
+      "consequent": "alarm clock bakelike red",
+      "confidence": 0.6498,
+      "lift": 19.2539,
+      "support": 0.0148
+    },
+    {
+      "consequent": "alarm clock bakelike green",
+      "confidence": 0.5707,
+      "lift": 18.6724,
+      "support": 0.013
+    }
+  ],
+  "jumbo bag pink polkadot": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.6306,
+      "lift": 8.2624,
+      "support": 0.0196
+    },
+    {
+      "consequent": "jumbo bag strawberry",
+      "confidence": 0.3343,
+      "lift": 7.4892,
+      "support": 0.0104
+    },
+    {
+      "consequent": "jumbo storage bag suki",
+      "confidence": 0.3286,
+      "lift": 6.5059,
+      "support": 0.0102
+    }
+  ],
+  "poppy's playhouse bedroom": [
+    {
+      "consequent": "poppy's playhouse kitchen",
+      "confidence": 0.8489,
+      "lift": 46.7141,
+      "support": 0.0139
+    },
+    {
+      "consequent": "poppy's playhouse livingroom",
+      "confidence": 0.6871,
+      "lift": 50.6281,
+      "support": 0.0113
+    }
+  ],
+  "poppy's playhouse kitchen": [
+    {
+      "consequent": "poppy's playhouse bedroom",
+      "confidence": 0.7662,
+      "lift": 46.7141,
+      "support": 0.0139
+    },
+    {
+      "consequent": "poppy's playhouse livingroom",
+      "confidence": 0.6623,
+      "lift": 48.8071,
+      "support": 0.012
+    }
+  ],
+  "poppy's playhouse livingroom": [
+    {
+      "consequent": "poppy's playhouse kitchen",
+      "confidence": 0.887,
+      "lift": 48.8071,
+      "support": 0.012
+    },
+    {
+      "consequent": "poppy's playhouse bedroom",
+      "confidence": 0.8304,
+      "lift": 50.6281,
+      "support": 0.0113
+    }
+  ],
+  "retrospot heart hot water bottle": [
+    {
+      "consequent": "scottie dog hot water bottle",
+      "confidence": 0.4238,
+      "lift": 9.8876,
+      "support": 0.0102
+    }
+  ],
+  "charlotte bag pink polkadot": [
+    {
+      "consequent": "red retrospot charlotte bag",
+      "confidence": 0.6617,
+      "lift": 24.701,
+      "support": 0.0117
+    }
+  ],
+  "hand warmer red retrospot": [
+    {
+      "consequent": "hand warmer owl design",
+      "confidence": 0.5378,
+      "lift": 17.246,
+      "support": 0.0107
+    },
+    {
+      "consequent": "hand warmer scotty dog design",
+      "confidence": 0.5067,
+      "lift": 18.3292,
+      "support": 0.0101
+    }
+  ],
+  "hand warmer union jack": [
+    {
+      "consequent": "hand warmer owl design",
+      "confidence": 0.4949,
+      "lift": 15.8717,
+      "support": 0.0115
+    },
+    {
+      "consequent": "hand warmer scotty dog design",
+      "confidence": 0.4327,
+      "lift": 15.6549,
+      "support": 0.0101
+    }
+  ],
+  "lunch bag suki design": [
+    {
+      "consequent": "lunch bag red retrospot",
+      "confidence": 0.5006,
+      "lift": 11.1701,
+      "support": 0.0133
+    },
+    {
+      "consequent": "lunch bag  black skull.",
+      "confidence": 0.4549,
+      "lift": 7.7378,
+      "support": 0.0121
+    },
+    {
+      "consequent": "lunch bag cars blue",
+      "confidence": 0.4338,
+      "lift": 8.2014,
+      "support": 0.0115
+    },
+    {
+      "consequent": "lunch bag spaceboy design",
+      "confidence": 0.4205,
+      "lift": 7.6054,
+      "support": 0.0112
+    },
+    {
+      "consequent": "lunch bag apple design",
+      "confidence": 0.4004,
+      "lift": 15.6923,
+      "support": 0.0106
+    },
+    {
+      "consequent": "lunch bag pink polkadot",
+      "confidence": 0.3982,
+      "lift": 12.2713,
+      "support": 0.0106
+    }
+  ],
+  "lunch bag apple design": [
+    {
+      "consequent": "lunch bag red retrospot",
+      "confidence": 0.4497,
+      "lift": 10.0355,
+      "support": 0.0115
+    },
+    {
+      "consequent": "lunch bag suki design",
+      "confidence": 0.4162,
+      "lift": 15.6923,
+      "support": 0.0106
+    }
+  ],
+  "jumbo bag apples": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.4895,
+      "lift": 6.4144,
+      "support": 0.0104
+    }
+  ],
+  "spotty bunting": [
+    {
+      "consequent": "party bunting",
+      "confidence": 0.3894,
+      "lift": 6.4292,
+      "support": 0.0115
+    }
+  ],
+  "jumbo bag vintage leaf": [
+    {
+      "consequent": "jumbo bag red retrospot",
+      "confidence": 0.4469,
+      "lift": 5.8555,
+      "support": 0.0102
+    }
+  ],
+  "gardeners kneeling pad cup of tea": [
+    {
+      "consequent": "gardeners kneeling pad keep calm",
+      "confidence": 0.7303,
+      "lift": 32.7873,
+      "support": 0.0137
+    }
+  ],
+  "gardeners kneeling pad keep calm": [
+    {
+      "consequent": "gardeners kneeling pad cup of tea",
+      "confidence": 0.6132,
+      "lift": 32.7873,
+      "support": 0.0137
+    }
+  ]
+}

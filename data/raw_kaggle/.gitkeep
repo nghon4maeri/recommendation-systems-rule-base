@@ -1,0 +1,2 @@
+# Raw Kaggle data directory.
+# Download dataset by running: python data_pipeline/ingest_kaggle_data.py --source kaggle

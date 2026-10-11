@@ -1,0 +1,166 @@
+# filepath: docker-compose.yml
+version: "3.9"
+
+services:
+  # ----------------------------------------------------
+  # 1. EVENT STREAMING BROKER (Kafka & Zookeeper)
+  # ----------------------------------------------------
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    container_name: recsys_zookeeper
+    restart: unless-stopped
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+    networks:
+      - data-platform-net
+
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    container_name: recsys_kafka
+    restart: unless-stopped
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+    networks:
+      - data-platform-net
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:v0.7.2
+    container_name: recsys_kafka_ui
+    restart: unless-stopped
+    depends_on:
+      - kafka
+    ports:
+      - "8085:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local-streaming-cluster
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
+      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
+    networks:
+      - data-platform-net
+
+  # ----------------------------------------------------
+  # 2. FEATURE STORE & IN-MEMORY CACHE (Redis)
+  # ----------------------------------------------------
+  redis:
+    image: redis:7.2-alpine
+    container_name: recsys_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    networks:
+      - data-platform-net
+
+  # ----------------------------------------------------
+  # 3. OBJECT STORAGE & DATA LAKEHOUSE (MinIO S3)
+  # ----------------------------------------------------
+  minio:
+    image: minio/minio:RELEASE.2024-01-18T22-51-28Z
+    container_name: recsys_minio
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadminpassword
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    networks:
+      - data-platform-net
+
+  # ----------------------------------------------------
+  # 4. RELATIONAL METADATA STORE (PostgreSQL)
+  # ----------------------------------------------------
+  postgres:
+    image: postgres:15-alpine
+    container_name: recsys_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: abc123password
+      POSTGRES_DB: fp_growth_mba
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    networks:
+      - data-platform-net
+
+  # ----------------------------------------------------
+  # 5. FASTAPI SERVING GATEWAY
+  # ----------------------------------------------------
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: recsys_backend
+    restart: unless-stopped
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_DB: 0
+      DATABASE_URL: postgresql://postgres:abc123password@postgres:5432/fp_growth_mba
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app/backend
+      - ./data:/app/data
+      - ./models:/app/models
+    networks:
+      - data-platform-net
+
+  # ----------------------------------------------------
+  # 6. STREAMING CART SESSION CONSUMER
+  # ----------------------------------------------------
+  cart-consumer:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: recsys_cart_consumer
+    restart: unless-stopped
+    depends_on:
+      - kafka
+      - redis
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      KAFKA_TOPIC: ecom.events.raw
+      KAFKA_GROUP_ID: recsys-cart-session-consumer
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_DB: 0
+    command: python streaming/consumers/cart_session_consumer.py
+    volumes:
+      - ./streaming:/app/streaming
+    networks:
+      - data-platform-net
+
+networks:
+  data-platform-net:
+    driver: bridge
+
+volumes:
+  redis_data:
+  minio_data:
+  pg_data:

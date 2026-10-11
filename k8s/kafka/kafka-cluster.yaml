@@ -1,0 +1,83 @@
+# filepath: k8s/kafka/kafka-cluster.yaml
+apiVersion: kafka.strimzi.io/v1beta2
+kind: Kafka
+metadata:
+  name: recsys-kafka-cluster
+  namespace: recsys-platform
+  labels:
+    app.kubernetes.io/name: kafka
+    app.kubernetes.io/part-of: recsys-platform
+spec:
+  kafka:
+    version: 3.6.0
+    replicas: 3
+    listeners:
+      - name: plain
+        port: 9092
+        type: internal
+        tls: false
+      - name: tls
+        port: 9093
+        type: internal
+        tls: true
+      - name: external
+        port: 9094
+        type: loadbalancer
+        tls: false
+    config:
+      offsets.topic.replication.factor: 3
+      transaction.state.log.replication.factor: 3
+      transaction.state.log.min.isr: 2
+      default.replication.factor: 3
+      min.insync.replicas: 2
+      inter.broker.protocol.version: "3.6"
+      auto.create.topics.enable: "true"
+      log.retention.hours: 168
+      log.segment.bytes: 1073741824
+    storage:
+      type: persistent-claim
+      size: 50Gi
+      deleteClaim: false
+    resources:
+      requests:
+        memory: 2Gi
+        cpu: "1000m"
+      limits:
+        memory: 4Gi
+        cpu: "2000m"
+  zookeeper:
+    replicas: 3
+    storage:
+      type: persistent-claim
+      size: 20Gi
+      deleteClaim: false
+    resources:
+      requests:
+        memory: 1Gi
+        cpu: "500m"
+      limits:
+        memory: 2Gi
+        cpu: "1000m"
+  entityOperator:
+    topicOperator:
+      watchedNamespace: recsys-platform
+      reconciliationIntervalSeconds: 60
+    userOperator:
+      watchedNamespace: recsys-platform
+      reconciliationIntervalSeconds: 60
+---
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaTopic
+metadata:
+  name: ecom-events-raw
+  namespace: recsys-platform
+  labels:
+    strimzi.io/cluster: recsys-kafka-cluster
+    app.kubernetes.io/part-of: recsys-platform
+spec:
+  partitions: 4
+  replicas: 3
+  config:
+    retention.ms: 604800000
+    segment.bytes: 1073741824
+    cleanup.policy: delete

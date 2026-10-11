@@ -1,0 +1,387 @@
+antecedents,consequents,support,confidence,lift
+frozenset({'home building block word'}),frozenset({'love building block word'}),0.023187892733870254,0.4304490690032859,9.852081088456705
+frozenset({'love building block word'}),frozenset({'home building block word'}),0.023187892733870254,0.5307224848075625,9.852081088456705
+frozenset({'chocolate hot water bottle'}),frozenset({'scottie dog hot water bottle'}),0.01442605540313302,0.33981931897150797,7.927636238938201
+frozenset({'scottie dog hot water bottle'}),frozenset({'chocolate hot water bottle'}),0.01442605540313302,0.33654507914659326,7.927636238938201
+frozenset({'chocolate hot water bottle'}),frozenset({'hot water bottle tea and sympathy'}),0.018290704192111398,0.4308547602501737,11.29519242706894
+frozenset({'hot water bottle tea and sympathy'}),frozenset({'chocolate hot water bottle'}),0.018290704192111398,0.4795050270688322,11.29519242706894
+frozenset({'hot water bottle tea and sympathy'}),frozenset({'scottie dog hot water bottle'}),0.010885919107885654,0.2853828306264501,6.6576887885373575
+frozenset({'scottie dog hot water bottle'}),frozenset({'hot water bottle tea and sympathy'}),0.010885919107885654,0.2539573296627667,6.6576887885373575
+frozenset({'jumbo bag pink vintage paisley'}),frozenset({'jumbo bag scandinavian paisley'}),0.010118889577248723,0.2809172809172809,13.262190907037704
+frozenset({'jumbo bag scandinavian paisley'}),frozenset({'jumbo bag pink vintage paisley'}),0.010118889577248723,0.4777158774373259,13.262190907037704
+frozenset({'lunch bag cars blue'}),frozenset({'lunch bag red spotty'}),0.011003923651060565,0.20803123257110986,6.658767413090567
+frozenset({'lunch bag red spotty'}),frozenset({'lunch bag cars blue'}),0.011003923651060565,0.352219074598678,6.658767413090567
+frozenset({'lunch bag cars blue'}),frozenset({'lunch bag woodland'}),0.020385284833466088,0.38538761851645287,8.257575287517193
+frozenset({'lunch bag woodland'}),frozenset({'lunch bag cars blue'}),0.020385284833466088,0.4367888748419722,8.257575287517193
+frozenset({'lunch bag cars blue'}),frozenset({'white hanging heart t-light holder'}),0.011298935008997847,0.21360847741215838,1.4972470138213259
+frozenset({'lunch bag red spotty'}),frozenset({'lunch bag woodland'}),0.010207392984629908,0.3267233238904627,7.000594506899502
+frozenset({'lunch bag woodland'}),frozenset({'lunch bag red spotty'}),0.010207392984629908,0.21871049304677623,7.000594506899502
+frozenset({'red hanging heart t-light holder'}),frozenset({'white hanging heart t-light holder'}),0.034014809570168454,0.7086662569145666,4.967258087393108
+frozenset({'white hanging heart t-light holder'}),frozenset({'red hanging heart t-light holder'}),0.034014809570168454,0.23842018196856907,4.967258087393108
+frozenset({'victorian glass hanging t-light'}),frozenset({'white hanging heart t-light holder'}),0.010885919107885654,0.258222533240028,1.809960547815804
+frozenset({'60 teatime fairy cake cases'}),frozenset({'pack of 60 pink paisley cake cases'}),0.021712835944183852,0.41723356009070295,8.968272660998451
+frozenset({'pack of 60 pink paisley cake cases'}),frozenset({'60 teatime fairy cake cases'}),0.021712835944183852,0.46670894102726695,8.968272660998451
+frozenset({'60 teatime fairy cake cases'}),frozenset({'pack of 72 retro spot cake cases'}),0.014101542909402012,0.2709750566893424,7.925143655391405
+frozenset({'pack of 72 retro spot cake cases'}),frozenset({'60 teatime fairy cake cases'}),0.014101542909402012,0.41242450388265744,7.925143655391405
+frozenset({'blue stripe ceramic drawer knob'}),frozenset({'red stripe ceramic drawer knob'}),0.011800454317491223,0.6269592476489029,34.61243911653886
+frozenset({'red stripe ceramic drawer knob'}),frozenset({'blue stripe ceramic drawer knob'}),0.011800454317491223,0.6514657980456026,34.61243911653886
+frozenset({'red spot ceramic drawer knob'}),frozenset({'red stripe ceramic drawer knob'}),0.010384399799392277,0.6208112874779541,34.273029660651815
+frozenset({'red stripe ceramic drawer knob'}),frozenset({'red spot ceramic drawer knob'}),0.010384399799392277,0.5732899022801303,34.273029660651815
+frozenset({'red spot ceramic drawer knob'}),frozenset({'white spot red ceramic drawer knob'}),0.010059887305661267,0.6014109347442681,32.72235386039559
+frozenset({'white spot red ceramic drawer knob'}),frozenset({'red spot ceramic drawer knob'}),0.010059887305661267,0.5473515248796148,32.72235386039559
+frozenset({'red stripe ceramic drawer knob'}),frozenset({'white spot red ceramic drawer knob'}),0.01003038616986754,0.5537459283387622,30.128933760672588
+frozenset({'white spot red ceramic drawer knob'}),frozenset({'red stripe ceramic drawer knob'}),0.01003038616986754,0.5457463884430177,30.128933760672588
+frozenset({'wood 2 drawer cabinet white finish'}),frozenset({'wood s/3 cabinet ant white finish'}),0.01460306221789539,0.4714285714285714,16.02809858145866
+frozenset({'wood s/3 cabinet ant white finish'}),frozenset({'wood 2 drawer cabinet white finish'}),0.01460306221789539,0.49648946840521563,16.02809858145866
+frozenset({'wood 2 drawer cabinet white finish'}),frozenset({'wooden frame antique white'}),0.013600023600908635,0.439047619047619,8.412887022530889
+frozenset({'wooden frame antique white'}),frozenset({'wood 2 drawer cabinet white finish'}),0.013600023600908635,0.2605992085924251,8.412887022530889
+frozenset({'wood s/3 cabinet ant white finish'}),frozenset({'wooden frame antique white'}),0.012124966811222233,0.41223671013039115,7.899145146008971
+frozenset({'wooden frame antique white'}),frozenset({'wood s/3 cabinet ant white finish'}),0.012124966811222233,0.23233465234595818,7.899145146008971
+frozenset({'assorted colour bird ornament'}),frozenset({'white hanging heart t-light holder'}),0.019116735994335783,0.24536160545248012,1.7198143796573033
+frozenset({'pink blue felt craft trinket box'}),frozenset({'pink cream felt craft trinket box'}),0.016815647402424992,0.5711422845691383,15.855864062276888
+frozenset({'pink cream felt craft trinket box'}),frozenset({'pink blue felt craft trinket box'}),0.016815647402424992,0.4668304668304668,15.855864062276888
+frozenset({'vintage heads and tails card game'}),frozenset({'vintage snap cards'}),0.016933651945599905,0.5471877979027645,12.54940783864006
+frozenset({'vintage snap cards'}),frozenset({'vintage heads and tails card game'}),0.016933651945599905,0.38836265223274696,12.54940783864006
+frozenset({'chocolate this way metal sign'}),frozenset({'hand over the chocolate   sign'}),0.010502404342567188,0.4444444444444444,11.633462033462035
+frozenset({'hand over the chocolate   sign'}),frozenset({'chocolate this way metal sign'}),0.010502404342567188,0.2749034749034749,11.633462033462035
+frozenset({'hand over the chocolate   sign'}),frozenset({'white hanging heart t-light holder'}),0.01153494409534767,0.3019305019305019,2.1163230405165887
+frozenset({'wood 2 drawer cabinet white finish'}),frozenset({'white hanging heart t-light holder'}),0.012331474761778328,0.3980952380952381,2.7903710268226396
+frozenset({'painted metal pears assorted'}),frozenset({'assorted colour bird ornament'}),0.015399592884326047,0.7310924369747899,9.38350637490892
+frozenset({'cook with wine metal sign'}),frozenset({'gin + tonic diet metal sign'}),0.01702215535298109,0.47295081967213115,11.60029951839814
+frozenset({'gin + tonic diet metal sign'}),frozenset({'cook with wine metal sign'}),0.01702215535298109,0.41751085383502173,11.60029951839814
+frozenset({'cook with wine metal sign'}),frozenset({'hand over the chocolate   sign'}),0.014691565625276574,0.4081967213114754,10.684667384011647
+frozenset({'hand over the chocolate   sign'}),frozenset({'cook with wine metal sign'}),0.014691565625276574,0.38455598455598455,10.684667384011647
+frozenset({'gin + tonic diet metal sign'}),frozenset({'hand over the chocolate   sign'}),0.015252087205357406,0.374095513748191,9.792058401175622
+frozenset({'hand over the chocolate   sign'}),frozenset({'gin + tonic diet metal sign'}),0.015252087205357406,0.3992277992277992,9.792058401175622
+frozenset({'gin + tonic diet metal sign'}),frozenset({'no singing metal sign'}),0.010974422515266837,0.2691751085383502,9.40642129291181
+frozenset({'no singing metal sign'}),frozenset({'gin + tonic diet metal sign'}),0.010974422515266837,0.3835051546391753,9.40642129291181
+frozenset({'hand over the chocolate   sign'}),frozenset({'no singing metal sign'}),0.011121928194235478,0.2911196911196911,10.173282649365124
+frozenset({'no singing metal sign'}),frozenset({'hand over the chocolate   sign'}),0.011121928194235478,0.388659793814433,10.173282649365124
+frozenset({'set/6 red spotty paper cups'}),frozenset({'set/6 red spotty paper plates'}),0.01442605540313302,0.789983844911147,38.69665085397854
+frozenset({'set/6 red spotty paper plates'}),frozenset({'set/6 red spotty paper cups'}),0.01442605540313302,0.7066473988439307,38.69665085397854
+frozenset({'edwardian parasol black'}),frozenset({'edwardian parasol natural'}),0.012360975897572056,0.5324015247776366,21.107385363026367
+frozenset({'edwardian parasol natural'}),frozenset({'edwardian parasol black'}),0.012360975897572056,0.49005847953216375,21.107385363026367
+frozenset({'zinc metal heart decoration'}),frozenset({'white hanging heart t-light holder'}),0.014514558810514205,0.3961352657004831,2.7766329821028277
+frozenset({'rex cash+carry jumbo shopper'}),frozenset({'white hanging heart t-light holder'}),0.012685488391303065,0.23407729994556342,1.64071923826608
+frozenset({'wood s/3 cabinet ant white finish'}),frozenset({'white hanging heart t-light holder'}),0.01138743841637903,0.38716148445336007,2.713733010445729
+frozenset({'jumbo bag owls'}),frozenset({'jumbo storage bag suki'}),0.011859456589078679,0.44127332601536773,8.737057203237686
+frozenset({'jumbo storage bag suki'}),frozenset({'jumbo bag owls'}),0.011859456589078679,0.23481308411214954,8.737057203237686
+frozenset({'jumbo bag woodland animals'}),frozenset({'jumbo storage bag suki'}),0.010059887305661267,0.3743139407244786,7.411284841552366
+frozenset({'jumbo storage bag suki'}),frozenset({'lunch bag  black skull.'}),0.011033424786854294,0.21845794392523366,3.7155388485868763
+frozenset({'jumbo storage bag suki'}),frozenset({'lunch bag cars blue'}),0.010561406614154644,0.2091121495327103,3.9533042569494037
+frozenset({'lunch bag  black skull.'}),frozenset({'lunch bag cars blue'}),0.02186034162315249,0.37180130456598093,7.02897312932128
+frozenset({'lunch bag cars blue'}),frozenset({'lunch bag  black skull.'}),0.02186034162315249,0.4132738427216955,7.02897312932128
+frozenset({'strawberry ceramic trinket box'}),frozenset({'sweetheart ceramic trinket box'}),0.024102427943475824,0.45088300220750555,13.074064265036625
+frozenset({'sweetheart ceramic trinket box'}),frozenset({'strawberry ceramic trinket box'}),0.024102427943475824,0.6988879384088965,13.074064265036625
+frozenset({'jumbo storage bag skulls'}),frozenset({'lunch bag  black skull.'}),0.010295896392011093,0.3507537688442211,5.9656299561026405
+frozenset({'lunch bag  black skull.'}),frozenset({'lunch bag red spotty'}),0.011888957724872407,0.2022077270446563,6.47236574469567
+frozenset({'lunch bag red spotty'}),frozenset({'lunch bag  black skull.'}),0.011888957724872407,0.380547686496695,6.47236574469567
+frozenset({'lunch bag  black skull.'}),frozenset({'lunch bag woodland'}),0.019677257574416615,0.3346713497240341,7.170894274080648
+frozenset({'lunch bag woodland'}),frozenset({'lunch bag  black skull.'}),0.019677257574416615,0.4216182048040455,7.170894274080648
+frozenset({'feltcraft doll molly'}),frozenset({'feltcraft doll rosie'}),0.010443402070979733,0.5057142857142857,24.807810626421336
+frozenset({'feltcraft doll rosie'}),frozenset({'feltcraft doll molly'}),0.010443402070979733,0.5123010130246021,24.807810626421336
+"frozenset({'key fob , back door'})","frozenset({'key fob , shed'})",0.012272472490190872,0.7234782608695652,37.49807738332669
+"frozenset({'key fob , shed'})","frozenset({'key fob , back door'})",0.012272472490190872,0.636085626911315,37.49807738332669
+frozenset({'cream heart card holder'}),frozenset({'white hanging heart t-light holder'}),0.014337551995751836,0.43161634103019536,3.0253306683003576
+frozenset({'wooden picture frame white finish'}),frozenset({'white hanging heart t-light holder'}),0.01958875416703543,0.40218049666868566,2.8190058510294533
+frozenset({'wood s/3 cabinet ant white finish'}),frozenset({'wooden picture frame white finish'}),0.01138743841637903,0.38716148445336007,7.948887243195363
+frozenset({'wooden picture frame white finish'}),frozenset({'wood s/3 cabinet ant white finish'}),0.01138743841637903,0.2337976983646275,7.948887243195363
+frozenset({'wooden frame antique white'}),frozenset({'wooden picture frame white finish'}),0.029294627843171963,0.5613340870548332,11.524858600180306
+frozenset({'wooden picture frame white finish'}),frozenset({'wooden frame antique white'}),0.029294627843171963,0.6014536644457904,11.524858600180306
+frozenset({'jumbo bag pink vintage paisley'}),frozenset({'jumbo bag strawberry'}),0.013098504292415257,0.36363636363636365,8.146848524905367
+frozenset({'jumbo bag strawberry'}),frozenset({'jumbo bag pink vintage paisley'}),0.013098504292415257,0.29345670852610706,8.146848524905367
+frozenset({'60 teatime fairy cake cases'}),frozenset({'pack of 60 dinosaur cake cases'}),0.01699265421718736,0.32653061224489793,9.777745727266172
+frozenset({'pack of 60 dinosaur cake cases'}),frozenset({'60 teatime fairy cake cases'}),0.01699265421718736,0.508833922261484,9.777745727266172
+frozenset({'60 teatime fairy cake cases'}),frozenset({'pack of 72 skull cake cases'}),0.013541021329321178,0.2602040816326531,7.656369579081632
+frozenset({'pack of 72 skull cake cases'}),frozenset({'60 teatime fairy cake cases'}),0.013541021329321178,0.3984375,7.656369579081632
+frozenset({'pack of 60 dinosaur cake cases'}),frozenset({'pack of 60 pink paisley cake cases'}),0.014396554267339292,0.43109540636042404,9.266227640709761
+frozenset({'pack of 60 pink paisley cake cases'}),frozenset({'pack of 60 dinosaur cake cases'}),0.014396554267339292,0.30944831959416613,9.266227640709761
+frozenset({'pack of 60 dinosaur cake cases'}),frozenset({'pack of 72 skull cake cases'}),0.012478980440746969,0.3736749116607774,10.995189653268552
+frozenset({'pack of 72 skull cake cases'}),frozenset({'pack of 60 dinosaur cake cases'}),0.012478980440746969,0.3671875,10.995189653268552
+frozenset({'pack of 60 pink paisley cake cases'}),frozenset({'pack of 72 retro spot cake cases'}),0.012065964539634776,0.2593532022828155,7.5852420170669514
+frozenset({'pack of 72 retro spot cake cases'}),frozenset({'pack of 60 pink paisley cake cases'}),0.012065964539634776,0.3528904227782571,7.5852420170669514
+frozenset({'pack of 60 pink paisley cake cases'}),frozenset({'pack of 72 skull cake cases'}),0.011269433873204119,0.24223208623969564,7.127552975058128
+frozenset({'pack of 72 skull cake cases'}),frozenset({'pack of 60 pink paisley cake cases'}),0.011269433873204119,0.3315972222222222,7.127552975058128
+frozenset({'love building block word'}),frozenset({'white hanging heart t-light holder'}),0.01596011446440688,0.3652937204591492,2.560455178329979
+frozenset({'jumbo  bag baroque black white'}),frozenset({'jumbo bag pink vintage paisley'}),0.010767914564710742,0.25312066574202496,7.027052585305014
+frozenset({'jumbo bag pink vintage paisley'}),frozenset({'jumbo  bag baroque black white'}),0.010767914564710742,0.2989352989352989,7.027052585305014
+frozenset({'jumbo  bag baroque black white'}),frozenset({'jumbo storage bag suki'}),0.015458595155913503,0.3633841886269071,7.194879580541046
+frozenset({'jumbo storage bag suki'}),frozenset({'jumbo  bag baroque black white'}),0.015458595155913503,0.3060747663551402,7.194879580541046
+frozenset({'jumbo bag pink vintage paisley'}),frozenset({'jumbo storage bag suki'}),0.012419978169159513,0.3447993447993448,6.826906186135159
+frozenset({'jumbo storage bag suki'}),frozenset({'jumbo bag pink vintage paisley'}),0.012419978169159513,0.24591121495327103,6.826906186135159
+frozenset({'set of 3 butterfly cookie cutters'}),frozenset({'set of 3 heart cookie cutters'}),0.011947959996459864,0.4975429975429975,17.903625252351365
+frozenset({'set of 3 heart cookie cutters'}),frozenset({'set of 3 butterfly cookie cutters'}),0.011947959996459864,0.4299363057324841,17.903625252351365
+frozenset({'60 teatime fairy cake cases'}),frozenset({'72 sweetheart fairy cake cases'}),0.01684514853821872,0.32369614512471656,9.338151686206396
+frozenset({'72 sweetheart fairy cake cases'}),frozenset({'60 teatime fairy cake cases'}),0.01684514853821872,0.48595744680851066,9.338151686206396
+frozenset({'60 teatime fairy cake cases'}),frozenset({'white hanging heart t-light holder'}),0.012065964539634776,0.231859410430839,1.6251733737332814
+frozenset({'lunch bag  black skull.'}),frozenset({'white hanging heart t-light holder'}),0.012065964539634776,0.20521826392373307,1.438437446696191
+frozenset({'strawberry ceramic trinket box'}),frozenset({'white hanging heart t-light holder'}),0.01351152019352745,0.25275938189845476,1.7716676526492803
+frozenset({'strawberry charlotte bag'}),frozenset({'woodland charlotte bag'}),0.011859456589078679,0.4068825910931174,12.999150980474457
+frozenset({'woodland charlotte bag'}),frozenset({'strawberry charlotte bag'}),0.011859456589078679,0.37888784165881245,12.999150980474457
+frozenset({'bathroom metal sign'}),frozenset({'kitchen metal sign'}),0.012862495206065434,0.4059590316573557,25.342160766278795
+frozenset({'kitchen metal sign'}),frozenset({'bathroom metal sign'}),0.012862495206065434,0.8029465930018416,25.342160766278795
+frozenset({'bathroom metal sign'}),frozenset({'toilet metal sign'}),0.01657963831607517,0.5232774674115456,24.364747682485117
+frozenset({'toilet metal sign'}),frozenset({'bathroom metal sign'}),0.01657963831607517,0.771978021978022,24.364747682485117
+frozenset({'kitchen metal sign'}),frozenset({'toilet metal sign'}),0.0106204088857421,0.6629834254143646,30.86971040009714
+frozenset({'toilet metal sign'}),frozenset({'kitchen metal sign'}),0.0106204088857421,0.4945054945054945,30.86971040009714
+frozenset({'jumbo bag strawberry'}),frozenset({'jumbo storage bag suki'}),0.01625512582234416,0.364177131526768,7.2105795720577435
+frozenset({'jumbo storage bag suki'}),frozenset({'jumbo bag strawberry'}),0.01625512582234416,0.32184579439252337,7.2105795720577435
+frozenset({'edwardian parasol black'}),frozenset({'edwardian parasol red'}),0.01138743841637903,0.49047013977128334,26.772087484423817
+frozenset({'edwardian parasol red'}),frozenset({'edwardian parasol black'}),0.01138743841637903,0.6215780998389694,26.772087484423817
+frozenset({'72 sweetheart fairy cake cases'}),frozenset({'pack of 60 dinosaur cake cases'}),0.012803492934477977,0.36936170212765956,11.060294714683106
+frozenset({'pack of 60 dinosaur cake cases'}),frozenset({'72 sweetheart fairy cake cases'}),0.012803492934477977,0.3833922261484099,11.060294714683106
+frozenset({'72 sweetheart fairy cake cases'}),frozenset({'pack of 60 pink paisley cake cases'}),0.013865533823052188,0.4,8.597844007609387
+frozenset({'pack of 60 pink paisley cake cases'}),frozenset({'72 sweetheart fairy cake cases'}),0.013865533823052188,0.29803424223208624,8.597844007609387
+frozenset({'hanging heart zinc t-light holder'}),frozenset({'white hanging heart t-light holder'}),0.010856417972091926,0.3233743409490334,2.2666294530912707
+frozenset({'home building block word'}),frozenset({'white hanging heart t-light holder'}),0.017405670118299556,0.3231106243154436,2.2647809827172436
+frozenset({'jumbo storage bag skulls'}),frozenset({'jumbo storage bag suki'}),0.013570522465114906,0.4623115577889447,9.153606819142441
+frozenset({'jumbo storage bag suki'}),frozenset({'jumbo storage bag skulls'}),0.013570522465114906,0.26869158878504673,9.153606819142441
+frozenset({'jumbo  bag baroque black white'}),frozenset({'jumbo bag strawberry'}),0.014868572440038941,0.34951456310679613,7.830466057918749
+frozenset({'jumbo bag strawberry'}),frozenset({'jumbo  bag baroque black white'}),0.014868572440038941,0.3331130204890945,7.830466057918749
+frozenset({'pack of 60 mushroom cake cases'}),frozenset({'pack of 60 pink paisley cake cases'}),0.009971383898280084,0.4740532959326788,10.189590724305654
+frozenset({'pack of 60 pink paisley cake cases'}),frozenset({'pack of 60 mushroom cake cases'}),0.009971383898280084,0.21433100824350032,10.189590724305654
+frozenset({'wooden frame antique white'}),frozenset({'white hanging heart t-light holder'}),0.0197657609817978,0.3787450537026569,2.6547396785274935
+frozenset({'wood 2 drawer cabinet white finish'}),frozenset({'wooden picture frame white finish'}),0.013334513378765083,0.43047619047619046,8.838189841654408
+frozenset({'wooden picture frame white finish'}),frozenset({'wood 2 drawer cabinet white finish'}),0.013334513378765083,0.2737734706238643,8.838189841654408
+frozenset({'hanging heart zinc t-light holder'}),frozenset({'single heart zinc t-light holder'}),0.013659025872496091,0.4068541300527241,16.859577562832747
+frozenset({'single heart zinc t-light holder'}),frozenset({'hanging heart zinc t-light holder'}),0.013659025872496091,0.5660146699266504,16.859577562832747
+frozenset({'gin + tonic diet metal sign'}),frozenset({'white hanging heart t-light holder'}),0.011564445231141399,0.28364688856729375,1.9881676140954418
+frozenset({'cook with wine metal sign'}),frozenset({'white hanging heart t-light holder'}),0.010089388441454995,0.28032786885245903,1.9649035919131104
+frozenset({'feltcraft 6 flower friends'}),frozenset({'feltcraft butterfly hearts'}),0.012478980440746969,0.35636057287278855,11.784931062116012
+frozenset({'feltcraft butterfly hearts'}),frozenset({'feltcraft 6 flower friends'}),0.012478980440746969,0.41268292682926827,11.784931062116012
+frozenset({'blue harmonica in box'}),frozenset({'red  harmonica in box'}),0.012065964539634776,0.501840490797546,19.463257570439836
+frozenset({'red  harmonica in box'}),frozenset({'blue harmonica in box'}),0.012065964539634776,0.4679633867276888,19.463257570439836
+frozenset({'party bunting'}),frozenset({'white hanging heart t-light holder'}),0.013010000885034075,0.21480759863614224,1.5056520204651185
+frozenset({'blue happy birthday bunting'}),frozenset({'pink happy birthday bunting'}),0.012891996341859162,0.6992,29.296393572311498
+frozenset({'pink happy birthday bunting'}),frozenset({'blue happy birthday bunting'}),0.012891996341859162,0.5401730531520396,29.296393572311498
+frozenset({'postage'}),frozenset({'round snack boxes set of4 woodland'}),0.011741452045903768,0.23508564678086238,6.971739430385733
+frozenset({'round snack boxes set of4 woodland'}),frozenset({'postage'}),0.011741452045903768,0.34820647419072615,6.971739430385733
+frozenset({'round snack boxes set of 4 fruits'}),frozenset({'round snack boxes set of4 woodland'}),0.014573561082101661,0.5051124744376279,14.97970039021196
+frozenset({'round snack boxes set of4 woodland'}),frozenset({'round snack boxes set of 4 fruits'}),0.014573561082101661,0.4321959755030621,14.97970039021196
+frozenset({'jumbo shopper vintage red paisley'}),frozenset({'jumbo storage bag suki'}),0.016343629229725345,0.3299583085169744,6.533058869041987
+frozenset({'jumbo storage bag suki'}),frozenset({'jumbo shopper vintage red paisley'}),0.016343629229725345,0.3235981308411215,6.533058869041987
+frozenset({'cook with wine metal sign'}),frozenset({'please one person metal sign'}),0.014839071304245213,0.4122950819672131,10.09066165591525
+frozenset({'please one person metal sign'}),frozenset({'cook with wine metal sign'}),0.014839071304245213,0.3631768953068592,10.09066165591525
+frozenset({'gin + tonic diet metal sign'}),frozenset({'please one person metal sign'}),0.014367053131545564,0.35238784370477566,8.624469846975293
+frozenset({'please one person metal sign'}),frozenset({'gin + tonic diet metal sign'}),0.014367053131545564,0.3516245487364621,8.624469846975293
+frozenset({'hand over the chocolate   sign'}),frozenset({'please one person metal sign'}),0.013275511107177626,0.3474903474903475,8.50460672121322
+frozenset({'please one person metal sign'}),frozenset({'hand over the chocolate   sign'}),0.013275511107177626,0.3249097472924188,8.50460672121322
+frozenset({'please one person metal sign'}),frozenset({'white hanging heart t-light holder'}),0.011623447502728855,0.28447653429602887,1.9939828542250806
+frozenset({'ladies & gentlemen metal sign'}),frozenset({'please one person metal sign'}),0.010089388441454995,0.38513513513513514,9.425939116011318
+frozenset({'please one person metal sign'}),frozenset({'ladies & gentlemen metal sign'}),0.010089388441454995,0.24693140794223828,9.425939116011318
+frozenset({'jumbo bag spaceboy design'}),frozenset({'jumbo shopper vintage red paisley'}),0.010118889577248723,0.35360824742268043,7.13892719647802
+frozenset({'jumbo shopper vintage red paisley'}),frozenset({'jumbo bag spaceboy design'}),0.010118889577248723,0.20428826682549137,7.13892719647802
+frozenset({'jumbo  bag baroque black white'}),frozenset({'jumbo shopper vintage red paisley'}),0.013924536094639643,0.3273231622746186,6.608262794295857
+frozenset({'jumbo shopper vintage red paisley'}),frozenset({'jumbo  bag baroque black white'}),0.013924536094639643,0.281119714115545,6.608262794295857
+frozenset({'jumbo bag pink vintage paisley'}),frozenset({'jumbo shopper vintage red paisley'}),0.01413104404519574,0.3923013923013923,7.920095470423047
+frozenset({'jumbo shopper vintage red paisley'}),frozenset({'jumbo bag pink vintage paisley'}),0.01413104404519574,0.285288862418106,7.920095470423047
+frozenset({'jumbo bag spaceboy design'}),frozenset({'jumbo storage bag suki'}),0.012744490662890521,0.44536082474226807,8.817988245495712
+frozenset({'jumbo storage bag suki'}),frozenset({'jumbo bag spaceboy design'}),0.012744490662890521,0.2523364485981308,8.817988245495712
+frozenset({'lunch bag pink retrospot'}),frozenset({'lunch bag red spotty'}),0.011623447502728855,0.5404663923182441,17.299517752985384
+frozenset({'lunch bag red spotty'}),frozenset({'lunch bag pink retrospot'}),0.011623447502728855,0.3720491029272899,17.299517752985384
+frozenset({'jumbo bag strawberry'}),frozenset({'jumbo shopper vintage red paisley'}),0.013010000885034075,0.2914738929279577,5.884508962822503
+frozenset({'jumbo shopper vintage red paisley'}),frozenset({'jumbo bag strawberry'}),0.013010000885034075,0.26265634306134605,5.884508962822503
+frozenset({'lunch bag spaceboy design'}),frozenset({'lunch bag suki  design'}),0.01504557925480131,0.272145144076841,8.59730097742095
+frozenset({'lunch bag suki  design'}),frozenset({'lunch bag spaceboy design'}),0.01504557925480131,0.47530288909599255,8.59730097742095
+frozenset({'pack of 60 dinosaur cake cases'}),frozenset({'pack of 60 spaceboy cake cases'}),0.011859456589078679,0.3551236749116608,13.228161767561062
+frozenset({'pack of 60 spaceboy cake cases'}),frozenset({'pack of 60 dinosaur cake cases'}),0.011859456589078679,0.44175824175824174,13.228161767561062
+frozenset({'pack of 60 pink paisley cake cases'}),frozenset({'pack of 60 spaceboy cake cases'}),0.010502404342567188,0.2257450856055802,8.40888040304654
+frozenset({'pack of 60 spaceboy cake cases'}),frozenset({'pack of 60 pink paisley cake cases'}),0.010502404342567188,0.3912087912087912,8.40888040304654
+frozenset({'lunch bag  black skull.'}),frozenset({'lunch bag spaceboy design'}),0.022833879104345516,0.38835925740090316,7.024660484588268
+frozenset({'lunch bag spaceboy design'}),frozenset({'lunch bag  black skull.'}),0.022833879104345516,0.41302027748132336,7.024660484588268
+frozenset({'lunch bag cars blue'}),frozenset({'lunch bag spaceboy design'}),0.020562291648228457,0.38873396542108196,7.031438220852944
+frozenset({'lunch bag spaceboy design'}),frozenset({'lunch bag cars blue'}),0.020562291648228457,0.371931696905016,7.031438220852944
+frozenset({'lunch bag spaceboy design'}),frozenset({'lunch bag woodland'}),0.02141782458624657,0.3874066168623266,8.300835709091203
+frozenset({'lunch bag woodland'}),frozenset({'lunch bag spaceboy design'}),0.02141782458624657,0.4589127686472819,8.300835709091203
+frozenset({'lunch bag cars blue'}),frozenset({'lunch bag suki  design'}),0.0123019736259846,0.23257110987172336,7.347122936926194
+frozenset({'lunch bag suki  design'}),frozenset({'lunch bag cars blue'}),0.0123019736259846,0.3886300093196645,7.347122936926194
+frozenset({'lunch bag  black skull.'}),frozenset({'lunch bag suki  design'}),0.012596984983921882,0.21424987456096337,6.7683392339170325
+frozenset({'lunch bag suki  design'}),frozenset({'lunch bag  black skull.'}),0.012596984983921882,0.3979496738117428,6.7683392339170325
+frozenset({'lunch bag red spotty'}),frozenset({'lunch bag suki  design'}),0.010443402070979733,0.3342776203966006,10.56011975636866
+frozenset({'lunch bag suki  design'}),frozenset({'lunch bag red spotty'}),0.010443402070979733,0.3299161230195713,10.56011975636866
+frozenset({'60 teatime fairy cake cases'}),frozenset({'pack of 60 spaceboy cake cases'}),0.012036463403841048,0.23129251700680273,8.615519174702847
+frozenset({'pack of 60 spaceboy cake cases'}),frozenset({'60 teatime fairy cake cases'}),0.012036463403841048,0.44835164835164837,8.615519174702847
+frozenset({'lunch bag suki  design'}),frozenset({'lunch bag woodland'}),0.010856417972091926,0.3429636533084809,7.348570768772173
+frozenset({'lunch bag woodland'}),frozenset({'lunch bag suki  design'}),0.010856417972091926,0.23261694058154236,7.348570768772173
+frozenset({'natural slate heart chalkboard'}),frozenset({'white hanging heart t-light holder'}),0.014249048588370653,0.29778051787916154,2.0872345356803015
+frozenset({'feltcraft cushion butterfly'}),frozenset({'feltcraft cushion owl'}),0.011770953181697495,0.5876288659793815,25.835091660315292
+frozenset({'feltcraft cushion owl'}),frozenset({'feltcraft cushion butterfly'}),0.011770953181697495,0.5175097276264592,25.835091660315292
+frozenset({'feltcraft cushion butterfly'}),frozenset({'feltcraft cushion rabbit'}),0.013128005428208986,0.6553755522827688,32.81427636001331
+frozenset({'feltcraft cushion rabbit'}),frozenset({'feltcraft cushion butterfly'}),0.013128005428208986,0.6573116691285081,32.81427636001331
+frozenset({'feltcraft cushion owl'}),frozenset({'feltcraft cushion rabbit'}),0.012242971354397144,0.5382619974059663,26.950468133042893
+frozenset({'feltcraft cushion rabbit'}),frozenset({'feltcraft cushion owl'}),0.012242971354397144,0.6129985228951256,26.950468133042893
+frozenset({'baking set 9 piece retrospot'}),frozenset({'baking set spaceboy design'}),0.016048617871788063,0.3153623188405797,12.119996056393571
+frozenset({'baking set spaceboy design'}),frozenset({'baking set 9 piece retrospot'}),0.016048617871788063,0.6167800453514739,12.119996056393571
+frozenset({'plasters in tin circus parade'}),frozenset({'plasters in tin strongman'}),0.01306900315662153,0.4027272727272727,15.96637001594896
+frozenset({'plasters in tin strongman'}),frozenset({'plasters in tin circus parade'}),0.01306900315662153,0.5181286549707602,15.96637001594896
+frozenset({'plasters in tin circus parade'}),frozenset({'plasters in tin spaceboy'}),0.015370091748532318,0.47363636363636363,13.888280119534445
+frozenset({'plasters in tin spaceboy'}),frozenset({'plasters in tin circus parade'}),0.015370091748532318,0.45069204152249137,13.888280119534445
+frozenset({'plasters in tin skulls'}),frozenset({'plasters in tin spaceboy'}),0.010944921379473109,0.40994475138121544,12.020672350838288
+frozenset({'plasters in tin spaceboy'}),frozenset({'plasters in tin skulls'}),0.010944921379473109,0.3209342560553633,12.020672350838288
+frozenset({'plasters in tin skulls'}),frozenset({'plasters in tin vintage paisley'}),0.010059887305661267,0.37679558011049724,12.901252302025782
+frozenset({'plasters in tin vintage paisley'}),frozenset({'plasters in tin skulls'}),0.010059887305661267,0.34444444444444444,12.901252302025782
+frozenset({'plasters in tin spaceboy'}),frozenset({'plasters in tin vintage paisley'}),0.011947959996459864,0.35034602076124566,11.995635419943378
+frozenset({'plasters in tin vintage paisley'}),frozenset({'plasters in tin spaceboy'}),0.011947959996459864,0.4090909090909091,11.995635419943378
+frozenset({'plasters in tin spaceboy'}),frozenset({'plasters in tin woodland animals'}),0.016373130365519073,0.4801038062283737,14.835076316976467
+frozenset({'plasters in tin woodland animals'}),frozenset({'plasters in tin spaceboy'}),0.016373130365519073,0.5059252506836828,14.835076316976467
+frozenset({'plasters in tin vintage paisley'}),frozenset({'plasters in tin woodland animals'}),0.011121928194235478,0.3808080808080808,11.766865556200104
+frozenset({'plasters in tin woodland animals'}),frozenset({'plasters in tin vintage paisley'}),0.011121928194235478,0.3436645396536007,11.766865556200104
+frozenset({'plasters in tin spaceboy'}),frozenset({'plasters in tin strongman'}),0.011121928194235478,0.32612456747404844,12.929408729436046
+frozenset({'plasters in tin strongman'}),frozenset({'plasters in tin spaceboy'}),0.011121928194235478,0.4409356725146199,12.929408729436046
+frozenset({'plasters in tin circus parade'}),frozenset({'plasters in tin woodland animals'}),0.014455556538926748,0.44545454545454544,13.76442363470622
+frozenset({'plasters in tin woodland animals'}),frozenset({'plasters in tin circus parade'}),0.014455556538926748,0.44667274384685507,13.76442363470622
+frozenset({'plasters in tin skulls'}),frozenset({'plasters in tin woodland animals'}),0.011033424786854294,0.41325966850828727,12.76961074149992
+frozenset({'plasters in tin woodland animals'}),frozenset({'plasters in tin skulls'}),0.011033424786854294,0.34092980856882404,12.76961074149992
+frozenset({'plasters in tin strongman'}),frozenset({'plasters in tin woodland animals'}),0.010472903206773462,0.4152046783625731,12.829711014089462
+frozenset({'plasters in tin woodland animals'}),frozenset({'plasters in tin strongman'}),0.010472903206773462,0.3236098450319052,12.829711014089462
+frozenset({'red retrospot cake stand'}),frozenset({'regency cakestand 3 tier'}),0.01079741570050447,0.3738508682328907,3.880104984840875
+frozenset({'heart of wicker large'}),frozenset({'heart of wicker small'}),0.025636487004749683,0.4997124784358827,9.575327236597577
+frozenset({'heart of wicker small'}),frozenset({'heart of wicker large'}),0.025636487004749683,0.49123798756359527,9.575327236597577
+frozenset({'heart of wicker large'}),frozenset({'white hanging heart t-light holder'}),0.01917573826592324,0.3737780333525014,2.6199243169044126
+frozenset({'heart of wicker small'}),frozenset({'white hanging heart t-light holder'}),0.016786146266631264,0.32165065008479365,2.254547577734543
+frozenset({'ivory kitchen scales'}),frozenset({'red kitchen scales'}),0.012803492934477977,0.40943396226415096,17.884771931530832
+frozenset({'red kitchen scales'}),frozenset({'ivory kitchen scales'}),0.012803492934477977,0.5592783505154639,17.884771931530832
+frozenset({'jumbo  bag baroque black white'}),frozenset({'jumbo bag red retrospot'}),0.01870372009322359,0.43966712898751736,5.760880043018894
+frozenset({'jumbo bag red retrospot'}),frozenset({'jumbo  bag baroque black white'}),0.01870372009322359,0.24507151140316968,5.760880043018894
+frozenset({'jumbo bag owls'}),frozenset({'jumbo bag red retrospot'}),0.010974422515266837,0.4083424807903403,5.350438759702421
+frozenset({'jumbo bag spaceboy design'}),frozenset({'jumbo bag red retrospot'}),0.012891996341859162,0.4505154639175258,5.903023842447767
+frozenset({'jumbo bag red retrospot'}),frozenset({'jumbo bag strawberry'}),0.021329321178865386,0.27947429454967143,6.261295546827637
+frozenset({'jumbo bag strawberry'}),frozenset({'jumbo bag red retrospot'}),0.021329321178865386,0.47785855915399866,6.261295546827637
+frozenset({'jumbo bag woodland animals'}),frozenset({'jumbo bag red retrospot'}),0.011475941823760214,0.4270032930845225,5.594948057860865
+frozenset({'jumbo bag red retrospot'}),frozenset({'jumbo shopper vintage red paisley'}),0.019677257574416615,0.25782759953614226,5.205230578604296
+frozenset({'jumbo shopper vintage red paisley'}),frozenset({'jumbo bag red retrospot'}),0.019677257574416615,0.3972602739726027,5.205230578604296
+frozenset({'jumbo storage bag skulls'}),frozenset({'jumbo bag red retrospot'}),0.0123019736259846,0.4190954773869347,5.491333357937737
+frozenset({'jumbo bag red retrospot'}),frozenset({'jumbo storage bag suki'}),0.021624332536802668,0.28333977580208736,5.610028259558035
+frozenset({'jumbo storage bag suki'}),frozenset({'jumbo bag red retrospot'}),0.021624332536802668,0.42815420560747663,5.610028259558035
+frozenset({'charlotte bag suki design'}),frozenset({'woodland charlotte bag'}),0.01153494409534767,0.41028331584470096,13.107797886133675
+frozenset({'woodland charlotte bag'}),frozenset({'charlotte bag suki design'}),0.01153494409534767,0.3685202639019793,13.107797886133675
+frozenset({'lunch bag  black skull.'}),frozenset({'jumbo bag red retrospot'}),0.012626486119715608,0.21475163070747616,2.813852348701708
+frozenset({'charlotte bag suki design'}),frozenset({'strawberry charlotte bag'}),0.010738413428917013,0.38195173137460653,13.104269067211575
+frozenset({'strawberry charlotte bag'}),frozenset({'charlotte bag suki design'}),0.010738413428917013,0.3684210526315789,13.104269067211575
+frozenset({'lunch bag cars blue'}),frozenset({'jumbo bag red retrospot'}),0.012036463403841048,0.2275515895147797,2.9815679280179697
+frozenset({'jumbo bag pink vintage paisley'}),frozenset({'jumbo bag red retrospot'}),0.015399592884326047,0.4275184275184275,5.601697772552044
+frozenset({'jumbo bag red retrospot'}),frozenset({'jumbo bag pink vintage paisley'}),0.015399592884326047,0.2017781213761113,5.601697772552044
+frozenset({'dolly girl lunch box'}),frozenset({'spaceboy lunch box'}),0.019824763253385256,0.6733466933867736,20.61827720481614
+frozenset({'spaceboy lunch box'}),frozenset({'dolly girl lunch box'}),0.019824763253385256,0.6070460704607046,20.61827720481614
+frozenset({'wooden heart christmas scandinavian'}),frozenset({'wooden star christmas scandinavian'}),0.013777030415671004,0.6432506887052342,32.986790612770534
+frozenset({'wooden star christmas scandinavian'}),frozenset({'wooden heart christmas scandinavian'}),0.013777030415671004,0.7065052950075643,32.986790612770534
+frozenset({'wooden star christmas scandinavian'}),frozenset({'wooden tree christmas scandinavian'}),0.010708912293123285,0.5491679273827534,40.73335937525863
+frozenset({'wooden tree christmas scandinavian'}),frozenset({'wooden star christmas scandinavian'}),0.010708912293123285,0.7943107221006565,40.73335937525863
+frozenset({'lunch bag cars blue'}),frozenset({'lunch bag dolly girl design'}),0.010738413428917013,0.2030117122141662,7.900675096353147
+frozenset({'lunch bag dolly girl design'}),frozenset({'lunch bag cars blue'}),0.010738413428917013,0.417910447761194,7.900675096353147
+frozenset({'lunch bag dolly girl design'}),frozenset({'lunch bag spaceboy design'}),0.014868572440038941,0.5786452353616532,10.46656218946316
+frozenset({'lunch bag spaceboy design'}),frozenset({'lunch bag dolly girl design'}),0.014868572440038941,0.2689434364994664,10.46656218946316
+frozenset({'lunch bag dolly girl design'}),frozenset({'lunch bag  black skull.'}),0.011062925922648022,0.4305396096440873,7.322629778276782
+frozenset({'lunch bag dolly girl design'}),frozenset({'lunch bag woodland'}),0.010531905478360916,0.40987370838117104,8.782230779390996
+frozenset({'lunch bag woodland'}),frozenset({'lunch bag dolly girl design'}),0.010531905478360916,0.22566371681415928,8.782230779390996
+frozenset({'wicker star'}),frozenset({'heart of wicker large'}),0.01017789184883618,0.4818435754189944,9.392209129371853
+frozenset({'green regency teacup and saucer'}),frozenset({'pink regency teacup and saucer'}),0.018438209871080035,0.6706008583690987,30.676595541345936
+frozenset({'pink regency teacup and saucer'}),frozenset({'green regency teacup and saucer'}),0.018438209871080035,0.8434547908232118,30.676595541345936
+frozenset({'green regency teacup and saucer'}),frozenset({'roses regency teacup and saucer'}),0.021919343894739946,0.7972103004291845,25.662903659684773
+frozenset({'roses regency teacup and saucer'}),frozenset({'green regency teacup and saucer'}),0.021919343894739946,0.7056030389363722,25.662903659684773
+frozenset({'pink regency teacup and saucer'}),frozenset({'roses regency teacup and saucer'}),0.01761217806885565,0.805668016194332,25.935164999942327
+frozenset({'roses regency teacup and saucer'}),frozenset({'pink regency teacup and saucer'}),0.01761217806885565,0.5669515669515669,25.935164999942327
+frozenset({'roses regency teacup and saucer'}),frozenset({'regency cakestand 3 tier'}),0.017110658760362274,0.5508072174738842,5.716690829979256
+frozenset({'green regency teacup and saucer'}),frozenset({'regency cakestand 3 tier'}),0.015281588341151134,0.555793991416309,5.768447313851386
+frozenset({'pink regency teacup and saucer'}),frozenset({'regency cakestand 3 tier'}),0.012567483848128154,0.5748987854251012,5.96673120929414
+frozenset({'feltcraft princess charlotte doll'}),frozenset({'feltcraft princess lola doll'}),0.011180930465822934,0.6112903225806452,34.70838871778246
+frozenset({'feltcraft princess lola doll'}),frozenset({'feltcraft princess charlotte doll'}),0.011180930465822934,0.6348408710217756,34.70838871778246
+frozenset({'hand warmer bird design'}),frozenset({'hand warmer owl design'}),0.01551759742750096,0.5799338478500551,18.597935326937858
+frozenset({'hand warmer owl design'}),frozenset({'hand warmer bird design'}),0.01551759742750096,0.49763481551561023,18.597935326937858
+frozenset({'hand warmer bird design'}),frozenset({'hand warmer scotty dog design'}),0.013541021329321178,0.5060639470782801,18.307416877387894
+frozenset({'hand warmer scotty dog design'}),frozenset({'hand warmer bird design'}),0.013541021329321178,0.48986125933831376,18.307416877387894
+frozenset({'hand warmer owl design'}),frozenset({'hand warmer scotty dog design'}),0.01593061332861315,0.510879848628193,18.481637384151394
+frozenset({'hand warmer scotty dog design'}),frozenset({'hand warmer owl design'}),0.01593061332861315,0.576307363927428,18.481637384151394
+frozenset({'chocolate hot water bottle'}),frozenset({'hot water bottle i am so poorly'}),0.01413104404519574,0.3328700486448923,13.861543045351246
+frozenset({'hot water bottle i am so poorly'}),frozenset({'chocolate hot water bottle'}),0.01413104404519574,0.5884520884520884,13.861543045351246
+"frozenset({""paper chain kit 50's christmas""})",frozenset({'paper chain kit vintage christmas'}),0.020031271203941353,0.4056152927120669,11.232958804788344
+frozenset({'paper chain kit vintage christmas'}),"frozenset({""paper chain kit 50's christmas""})",0.020031271203941353,0.5547385620915033,11.232958804788344
+frozenset({'candleholder pink hanging heart'}),frozenset({'white hanging heart t-light holder'}),0.01123993273741039,0.7326923076923076,5.135664010307311
+frozenset({'lunch bag pink polkadot'}),frozenset({'lunch bag spaceboy design'}),0.012773991798684249,0.3936363636363636,7.120113029979625
+frozenset({'lunch bag spaceboy design'}),frozenset({'lunch bag pink polkadot'}),0.012773991798684249,0.2310565635005336,7.120113029979625
+frozenset({'pack of 60 pink paisley cake cases'}),frozenset({'pack of 72 retrospot cake cases'}),0.013010000885034075,0.2796448953709575,7.031990369725035
+frozenset({'pack of 72 retrospot cake cases'}),frozenset({'pack of 60 pink paisley cake cases'}),0.013010000885034075,0.3271513353115727,7.031990369725035
+frozenset({'lunch bag dolly girl design'}),frozenset({'lunch bag red retrospot'}),0.010590907749948373,0.4121699196326062,9.197711498213597
+frozenset({'lunch bag red retrospot'}),frozenset({'lunch bag dolly girl design'}),0.010590907749948373,0.23633969716919026,9.197711498213597
+frozenset({'alarm clock bakelike green'}),frozenset({'alarm clock bakelike red'}),0.020709797327197098,0.6776061776061776,20.077636890136894
+frozenset({'alarm clock bakelike red'}),frozenset({'alarm clock bakelike green'}),0.020709797327197098,0.6136363636363636,20.077636890136894
+frozenset({'alarm clock bakelike orange'}),frozenset({'alarm clock bakelike red'}),0.010295896392011093,0.698,20.68191083916084
+frozenset({'alarm clock bakelike red'}),frozenset({'alarm clock bakelike orange'}),0.010295896392011093,0.30506993006993005,20.68191083916084
+frozenset({'60 teatime fairy cake cases'}),frozenset({'pack of 72 retrospot cake cases'}),0.012832994070271705,0.2465986394557823,6.201004511596922
+frozenset({'pack of 72 retrospot cake cases'}),frozenset({'60 teatime fairy cake cases'}),0.012832994070271705,0.32270029673590506,6.201004511596922
+frozenset({'alarm clock bakelike green'}),frozenset({'alarm clock bakelike ivory'}),0.011003923651060565,0.36003861003861004,19.84427441378661
+frozenset({'alarm clock bakelike ivory'}),frozenset({'alarm clock bakelike green'}),0.011003923651060565,0.6065040650406504,19.84427441378661
+frozenset({'alarm clock bakelike ivory'}),frozenset({'alarm clock bakelike red'}),0.012537982712334425,0.6910569105691057,20.47618539996589
+frozenset({'alarm clock bakelike red'}),frozenset({'alarm clock bakelike ivory'}),0.012537982712334425,0.3715034965034965,20.47618539996589
+frozenset({'charlotte bag suki design'}),frozenset({'red retrospot charlotte bag'}),0.010885919107885654,0.38719832109129065,14.454693270959782
+frozenset({'red retrospot charlotte bag'}),frozenset({'charlotte bag suki design'}),0.010885919107885654,0.4063876651982379,14.454693270959782
+frozenset({'red retrospot charlotte bag'}),frozenset({'strawberry charlotte bag'}),0.01032539752780482,0.3854625550660793,13.224720879630455
+frozenset({'strawberry charlotte bag'}),frozenset({'red retrospot charlotte bag'}),0.01032539752780482,0.354251012145749,13.224720879630455
+frozenset({'red retrospot charlotte bag'}),frozenset({'woodland charlotte bag'}),0.010148390713042452,0.3788546255506608,12.103708993676483
+frozenset({'woodland charlotte bag'}),frozenset({'red retrospot charlotte bag'}),0.010148390713042452,0.3242224316682375,12.103708993676483
+frozenset({'alarm clock bakelike green'}),frozenset({'alarm clock bakelike pink'}),0.012980499749240346,0.4247104247104247,18.672385559545095
+frozenset({'alarm clock bakelike pink'}),frozenset({'alarm clock bakelike green'}),0.012980499749240346,0.5706874189364461,18.672385559545095
+frozenset({'alarm clock bakelike pink'}),frozenset({'alarm clock bakelike red'}),0.014780069032657757,0.6498054474708171,19.253894451851654
+frozenset({'alarm clock bakelike red'}),frozenset({'alarm clock bakelike pink'}),0.014780069032657757,0.4379370629370629,19.253894451851654
+frozenset({'jumbo bag pink polkadot'}),frozenset({'jumbo bag red retrospot'}),0.01958875416703543,0.630579297245964,8.262368163411843
+frozenset({'jumbo bag red retrospot'}),frozenset({'jumbo bag pink polkadot'}),0.01958875416703543,0.25666795516041746,8.262368163411843
+"frozenset({""poppy's playhouse bedroom""})","frozenset({""poppy's playhouse kitchen""})",0.013924536094639643,0.8489208633093526,46.71407549285246
+"frozenset({""poppy's playhouse kitchen""})","frozenset({""poppy's playhouse bedroom""})",0.013924536094639643,0.7662337662337663,46.71407549285246
+"frozenset({""poppy's playhouse bedroom""})","frozenset({""poppy's playhouse livingroom""})",0.011269433873204119,0.6870503597122302,50.62814357209884
+"frozenset({""poppy's playhouse livingroom""})","frozenset({""poppy's playhouse bedroom""})",0.011269433873204119,0.8304347826086956,50.62814357209884
+"frozenset({""poppy's playhouse kitchen""})","frozenset({""poppy's playhouse livingroom""})",0.012036463403841048,0.6623376623376623,48.807086391869
+"frozenset({""poppy's playhouse livingroom""})","frozenset({""poppy's playhouse kitchen""})",0.012036463403841048,0.8869565217391304,48.807086391869
+frozenset({'retrospot heart hot water bottle'}),frozenset({'scottie dog hot water bottle'}),0.01017789184883618,0.4238329238329238,9.887587487381019
+frozenset({'scottie dog hot water bottle'}),frozenset({'retrospot heart hot water bottle'}),0.01017789184883618,0.23743977976600136,9.887587487381019
+frozenset({'pack of 60 dinosaur cake cases'}),frozenset({'pack of 72 retrospot cake cases'}),0.009971383898280084,0.29858657243816256,7.508300479181303
+frozenset({'pack of 72 retrospot cake cases'}),frozenset({'pack of 60 dinosaur cake cases'}),0.009971383898280084,0.2507418397626113,7.508300479181303
+frozenset({'lunch bag red retrospot'}),frozenset({'jumbo bag red retrospot'}),0.015134082662182495,0.3377221856484529,4.425113616902053
+frozenset({'jumbo bag pink polkadot'}),frozenset({'jumbo bag strawberry'}),0.010384399799392277,0.3342830009496676,7.489220676266282
+frozenset({'jumbo bag strawberry'}),frozenset({'jumbo bag pink polkadot'}),0.010384399799392277,0.232650363516193,7.489220676266282
+frozenset({'lunch bag  black skull.'}),frozenset({'lunch bag pink polkadot'}),0.016137121279169248,0.2744606121424987,8.4576285179948
+frozenset({'lunch bag pink polkadot'}),frozenset({'lunch bag  black skull.'}),0.016137121279169248,0.49727272727272726,8.4576285179948
+frozenset({'lunch bag cars blue'}),frozenset({'lunch bag pink polkadot'}),0.014573561082101661,0.275515895147797,8.490147543477159
+frozenset({'lunch bag pink polkadot'}),frozenset({'lunch bag cars blue'}),0.014573561082101661,0.4490909090909091,8.490147543477159
+frozenset({'lunch bag pink polkadot'}),frozenset({'lunch bag woodland'}),0.01109242705844175,0.3418181818181818,7.3240271233191585
+frozenset({'lunch bag woodland'}),frozenset({'lunch bag pink polkadot'}),0.01109242705844175,0.23767383059418457,7.3240271233191585
+frozenset({'lunch bag cars blue'}),frozenset({'lunch bag red retrospot'}),0.015635601970675872,0.2955939765755717,6.596279805123209
+frozenset({'lunch bag red retrospot'}),frozenset({'lunch bag cars blue'}),0.015635601970675872,0.3489137590520079,6.596279805123209
+frozenset({'lunch bag pink polkadot'}),frozenset({'lunch bag red retrospot'}),0.018349706463698854,0.5654545454545454,12.618309892872107
+frozenset({'lunch bag red retrospot'}),frozenset({'lunch bag pink polkadot'}),0.018349706463698854,0.40947992100065833,12.618309892872107
+frozenset({'lunch bag red retrospot'}),frozenset({'lunch bag spaceboy design'}),0.015989615600200607,0.3568136932192232,6.454062838341519
+frozenset({'lunch bag spaceboy design'}),frozenset({'lunch bag red retrospot'}),0.015989615600200607,0.2892209178228389,6.454062838341519
+frozenset({'charlotte bag pink polkadot'}),frozenset({'red retrospot charlotte bag'}),0.01171195091011004,0.6616666666666666,24.7010077092511
+frozenset({'red retrospot charlotte bag'}),frozenset({'charlotte bag pink polkadot'}),0.01171195091011004,0.43722466960352424,24.7010077092511
+frozenset({'lunch bag  black skull.'}),frozenset({'lunch bag red retrospot'}),0.017877688290999203,0.30406422478675366,6.785296265698873
+frozenset({'lunch bag red retrospot'}),frozenset({'lunch bag  black skull.'}),0.017877688290999203,0.3989466754443713,6.785296265698873
+frozenset({'lunch bag red retrospot'}),frozenset({'lunch bag woodland'}),0.01504557925480131,0.3357472021066491,7.193946213532923
+frozenset({'lunch bag woodland'}),frozenset({'lunch bag red retrospot'}),0.01504557925480131,0.3223767383059418,7.193946213532923
+frozenset({'jumbo bag pink polkadot'}),frozenset({'jumbo storage bag suki'}),0.010207392984629908,0.3285849952516619,6.505867747690178
+frozenset({'jumbo storage bag suki'}),frozenset({'jumbo bag pink polkadot'}),0.010207392984629908,0.20210280373831777,6.505867747690178
+frozenset({'hand warmer red retrospot'}),frozenset({'hand warmer scotty dog design'}),0.010089388441454995,0.5066666666666667,18.329220917822834
+frozenset({'hand warmer scotty dog design'}),frozenset({'hand warmer red retrospot'}),0.010089388441454995,0.3649946638207044,18.329220917822834
+frozenset({'hand warmer owl design'}),frozenset({'hand warmer union jack'}),0.011505442959553943,0.36896877956480606,15.871744569680496
+frozenset({'hand warmer union jack'}),frozenset({'hand warmer owl design'}),0.011505442959553943,0.4949238578680203,15.871744569680496
+frozenset({'hand warmer owl design'}),frozenset({'hand warmer red retrospot'}),0.010708912293123285,0.3434247871333964,17.24602964364554
+frozenset({'hand warmer red retrospot'}),frozenset({'hand warmer owl design'}),0.010708912293123285,0.5377777777777778,17.24602964364554
+frozenset({'hand warmer scotty dog design'}),frozenset({'hand warmer union jack'}),0.010059887305661267,0.3639274279615795,15.654883281235607
+frozenset({'hand warmer union jack'}),frozenset({'hand warmer scotty dog design'}),0.010059887305661267,0.43274111675126903,15.654883281235607
+frozenset({'lunch bag cars blue'}),frozenset({'lunch bag suki design'}),0.011505442959553943,0.21751254880089235,8.201360252173357
+frozenset({'lunch bag suki design'}),frozenset({'lunch bag cars blue'}),0.011505442959553943,0.43381535038932145,8.201360252173357
+frozenset({'lunch bag pink polkadot'}),frozenset({'lunch bag suki design'}),0.010561406614154644,0.32545454545454544,12.271337850136515
+frozenset({'lunch bag suki design'}),frozenset({'lunch bag pink polkadot'}),0.010561406614154644,0.3982202447163515,12.271337850136515
+frozenset({'lunch bag red retrospot'}),frozenset({'lunch bag suki design'}),0.013275511107177626,0.29624753127057274,11.170080720220918
+frozenset({'lunch bag suki design'}),frozenset({'lunch bag red retrospot'}),0.013275511107177626,0.5005561735261401,11.170080720220918
+frozenset({'lunch bag spaceboy design'}),frozenset({'lunch bag suki design'}),0.011151429330029206,0.2017075773745998,7.605430200519253
+frozenset({'lunch bag suki design'}),frozenset({'lunch bag spaceboy design'}),0.011151429330029206,0.42046718576195774,7.605430200519253
+frozenset({'lunch bag  black skull.'}),frozenset({'lunch bag suki design'}),0.012065964539634776,0.20521826392373307,7.7378014374002
+frozenset({'lunch bag suki design'}),frozenset({'lunch bag  black skull.'}),0.012065964539634776,0.4549499443826474,7.7378014374002
+frozenset({'lunch bag apple design'}),frozenset({'lunch bag red retrospot'}),0.011475941823760214,0.44971098265895953,10.035453047525182
+frozenset({'lunch bag red retrospot'}),frozenset({'lunch bag apple design'}),0.011475941823760214,0.25608953258722844,10.035453047525182
+frozenset({'lunch bag apple design'}),frozenset({'lunch bag suki design'}),0.0106204088857421,0.4161849710982659,15.692349238395906
+frozenset({'lunch bag suki design'}),frozenset({'lunch bag apple design'}),0.0106204088857421,0.40044493882091214,15.692349238395906
+frozenset({'jumbo bag apples'}),frozenset({'jumbo bag red retrospot'}),0.010354898663598549,0.4895397489539749,6.414352095204055
+frozenset({'spotty bunting'}),frozenset({'party bunting'}),0.011475941823760214,0.3893893893893894,6.42919246572437
+frozenset({'jumbo bag vintage leaf'}),frozenset({'jumbo bag red retrospot'}),0.01017789184883618,0.44689119170984454,5.855535649551064
+frozenset({'gardeners kneeling pad cup of tea'}),frozenset({'gardeners kneeling pad keep calm'}),0.013659025872496091,0.7302839116719243,32.78732947542148
+frozenset({'gardeners kneeling pad keep calm'}),frozenset({'gardeners kneeling pad cup of tea'}),0.013659025872496091,0.6132450331125828,32.78732947542148

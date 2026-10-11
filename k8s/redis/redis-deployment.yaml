@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-feature-store
+  namespace: recsys-platform
+  labels:
+    app: redis-feature-store
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-feature-store
+  template:
+    metadata:
+      labels:
+        app: redis-feature-store
+    spec:
+      containers:
+        - name: redis
+          image: redis:7.2-alpine
+          command: ["redis-server", "--appendonly", "yes", "--maxmemory", "512mb", "--maxmemory-policy", "allkeys-lru"]
+          ports:
+            - containerPort: 6379
+              name: redis
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+          readinessProbe:
+            tcpSocket:
+              port: 6379
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: 6379
+            initialDelaySeconds: 15
+            periodSeconds: 20
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: recsys-platform
+spec:
+  selector:
+    app: redis-feature-store
+  ports:
+    - port: 6379
+      targetPort: 6379
+      name: redis
+  type: ClusterIP

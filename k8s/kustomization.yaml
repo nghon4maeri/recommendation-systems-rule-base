@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: recsys-platform
+
+resources:
+  - namespace.yaml
+  - redis/redis-deployment.yaml
+  - kafka/kafka-cluster.yaml
+  - backend/backend-deployment.yaml
+  - airflow/airflow-deployment.yaml
+  - ui/ui-deployment.yaml
+  - ingress.yaml

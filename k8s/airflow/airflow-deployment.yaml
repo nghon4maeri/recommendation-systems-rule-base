@@ -1,0 +1,210 @@
+# filepath: k8s/airflow/airflow-deployment.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: airflow-config
+  namespace: recsys-platform
+  labels:
+    app.kubernetes.io/name: airflow
+    app.kubernetes.io/part-of: recsys-platform
+data:
+  AIRFLOW__CORE__EXECUTOR: "LocalExecutor"
+  AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: "postgresql+psycopg2://airflow:airflow@airflow-postgres.recsys-platform.svc.cluster.local:5432/airflow"
+  AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+  AIRFLOW__CORE__ENABLE_XCOM_PICKLING: "true"
+  AIRFLOW__WEBSERVER__SECRET_KEY: "recsys_airflow_secret_key_production_2026"
+  AIRFLOW__LOGGING__LOGGING_LEVEL: "INFO"
+  PYTHONPATH: "/opt/airflow:/opt/airflow/dags"
+  REDIS_HOST: "redis-service.recsys-platform.svc.cluster.local"
+  REDIS_PORT: "6379"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: airflow-dags-pvc
+  namespace: recsys-platform
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: airflow-logs-pvc
+  namespace: recsys-platform
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: airflow-postgres
+  namespace: recsys-platform
+  labels:
+    app: airflow-postgres
+spec:
+  serviceName: airflow-postgres
+  replicas: 1
+  selector:
+    matchLabels:
+      app: airflow-postgres
+  template:
+    metadata:
+      labels:
+        app: airflow-postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:15-alpine
+          env:
+            - name: POSTGRES_USER
+              value: "airflow"
+            - name: POSTGRES_PASSWORD
+              value: "airflow"
+            - name: POSTGRES_DB
+              value: "airflow"
+          ports:
+            - containerPort: 5432
+              name: postgres
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-postgres
+  namespace: recsys-platform
+spec:
+  ports:
+    - port: 5432
+      targetPort: 5432
+  selector:
+    app: airflow-postgres
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airflow-webserver
+  namespace: recsys-platform
+  labels:
+    app: airflow-webserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: airflow-webserver
+  template:
+    metadata:
+      labels:
+        app: airflow-webserver
+    spec:
+      containers:
+        - name: webserver
+          image: apache/airflow:2.8.1-python3.11
+          args: ["webserver"]
+          envFrom:
+            - configMapRef:
+                name: airflow-config
+          ports:
+            - containerPort: 8080
+              name: http
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 45
+            periodSeconds: 20
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 15
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "1Gi"
+            limits:
+              cpu: "2000m"
+              memory: "2Gi"
+          volumeMounts:
+            - name: dags
+              mountPath: /opt/airflow/dags
+            - name: logs
+              mountPath: /opt/airflow/logs
+      volumes:
+        - name: dags
+          persistentVolumeClaim:
+            claimName: airflow-dags-pvc
+        - name: logs
+          persistentVolumeClaim:
+            claimName: airflow-logs-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-webserver-service
+  namespace: recsys-platform
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: airflow-webserver
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airflow-scheduler
+  namespace: recsys-platform
+  labels:
+    app: airflow-scheduler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: airflow-scheduler
+  template:
+    metadata:
+      labels:
+        app: airflow-scheduler
+    spec:
+      containers:
+        - name: scheduler
+          image: apache/airflow:2.8.1-python3.11
+          args: ["scheduler"]
+          envFrom:
+            - configMapRef:
+                name: airflow-config
+          resources:
+            requests:
+              cpu: "1000m"
+              memory: "2Gi"
+            limits:
+              cpu: "3000m"
+              memory: "4Gi"
+          volumeMounts:
+            - name: dags
+              mountPath: /opt/airflow/dags
+            - name: logs
+              mountPath: /opt/airflow/logs
+      volumes:
+        - name: dags
+          persistentVolumeClaim:
+            claimName: airflow-dags-pvc
+        - name: logs
+          persistentVolumeClaim:
+            claimName: airflow-logs-pvc

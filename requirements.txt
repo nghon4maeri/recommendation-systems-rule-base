@@ -1,0 +1,36 @@
+# filepath: requirements.txt
+# Core Scientific & Data Processing
+numpy>=1.26.0,<2.3.0
+pandas>=2.2.0
+pyarrow>=15.0.0
+scipy>=1.11.0
+scikit-learn>=1.4.0
+
+# Event Streaming & Messaging
+kafka-python==2.0.2
+
+# In-Memory Feature Store & Caching
+redis==5.0.8
+
+# Deep Learning Framework
+torch>=2.2.0
+
+# Serving API Gateway
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+requests>=2.31.0
+
+# Database & Object Storage
+psycopg2-binary>=2.9.9
+sqlalchemy>=2.0.25
+minio>=7.2.5
+
+# Data Augmentation & Quality
+faker>=24.0.0
+
+# Association Mining (Optional native fallback built-in)
+mlxtend>=0.23.1
+
+# Workflow Orchestration (for local airflow workers)
+apache-airflow>=2.8.2

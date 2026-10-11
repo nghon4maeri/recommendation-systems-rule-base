@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recsys-ui
+  namespace: recsys-platform
+  labels:
+    app: recsys-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: recsys-ui
+  template:
+    metadata:
+      labels:
+        app: recsys-ui
+    spec:
+      containers:
+        - name: ui
+          image: nhnammldlnlpcvrs/recsys-ui:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8501
+              name: http
+          env:
+            - name: API_URL
+              value: "http://recsys-backend-service.recsys-platform.svc.cluster.local:8000"
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: recsys-ui-service
+  namespace: recsys-platform
+spec:
+  selector:
+    app: recsys-ui
+  ports:
+    - port: 8501
+      targetPort: 8501
+      name: http
+  type: ClusterIP
