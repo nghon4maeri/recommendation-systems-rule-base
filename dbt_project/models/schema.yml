@@ -1,57 +1,96 @@
+# filepath: dbt_project/models/schema.yml
 version: 2
+
+sources:
+  - name: public
+    description: "Raw transactional tables ingested into Lakehouse PostgreSQL / MinIO"
+    tables:
+      - name: online_retail
+        description: "Raw Kaggle Online Retail II transactional table"
+        columns:
+          - name: InvoiceNo
+            description: "Invoice identifier string (starts with 'C' if cancellation)"
+          - name: StockCode
+            description: "Product item code"
+          - name: Description
+            description: "Product description"
+          - name: Quantity
+            description: "Quantity purchased"
+          - name: InvoiceDate
+            description: "Timestamp of purchase"
+          - name: UnitPrice
+            description: "Price per unit in GBP"
+          - name: CustomerID
+            description: "Unique Customer identifier integer"
+          - name: Country
+            description: "Country of purchaser"
 
 models:
   - name: stg_online_retail
-    description: |
-      This staging model contains cleaned and preprocessed retail data. 
-      Main preparation steps include:
-        - Removing null or duplicate records
-        - Standardizing product descriptions
-        - Converting currencies into a common format
+    description: "Cleaned and standardized online retail transactions without cancellations."
     columns:
-      - name: InvoiceNo
-        description: "Unique invoice identifier"
+      - name: invoiceno
+        description: "Standardized invoice identifier"
+        tests:
+          - not_null
+      - name: stockcode
+        description: "Standardized stock identifier code"
+        tests:
+          - not_null
+      - name: description
+        description: "Cleaned uppercase product description"
+        tests:
+          - not_null
+      - name: quantity
+        description: "Positive integer quantity of items"
+        tests:
+          - not_null
+      - name: unitprice
+        description: "Unit price in GBP"
+        tests:
+          - not_null
+      - name: line_amount
+        description: "Total line amount (quantity * unitprice)"
+        tests:
+          - not_null
+
+  - name: transaction_fpgrowth
+    description: "Aggregated multi-item shopping baskets curated for FP-Growth market basket mining."
+    columns:
+      - name: transaction_id
+        description: "Invoice / Transaction identifier"
         tests:
           - not_null
           - unique
-      - name: CustomerID
-        description: "Unique customer identifier"
+      - name: basket_size
+        description: "Count of distinct items in basket (strictly >= 2 for association rules)"
         tests:
           - not_null
-      - name: Country
-        description: "Customer's country of origin"
+      - name: total_basket_value
+        description: "Monetary total of the shopping basket"
         tests:
-          - accepted_values:
-              values: ['United Kingdom', 'France', 'Germany', 'EIRE', 'Spain']
+          - not_null
+      - name: items
+        description: "Comma-delimited string of item descriptions"
+        tests:
+          - not_null
 
-  - name: dl_input
-    description: |
-      This model prepares user-item interaction pairs for the Deep Learning recommendation system. 
-      Steps include:
-        - Selecting top-N products based on frequency
-        - Mapping users and items to numeric IDs
-        - Normalizing the format for model input
+  - name: user_item_dl
+    description: "Feature-engineered implicit interaction pairs for Neural Collaborative Filtering."
     columns:
       - name: user_id
-        description: "User identifier mapped to numeric ID"
+        description: "Customer / User identifier integer"
         tests:
           - not_null
       - name: item_id
-        description: "Item identifier mapped to numeric ID"
+        description: "StockCode item identifier"
         tests:
           - not_null
-
-  - name: fpgrowth_input
-    description: |
-      This model generates transaction-style item lists for the FP-Growth algorithm. 
-      Steps include:
-        - Grouping products by invoice
-        - Creating item lists that represent products bought together
-    columns:
-      - name: transaction_id
-        description: "Unique transaction identifier"
+      - name: interaction_frequency
+        description: "Distinct transaction dates customer interacted with item"
         tests:
           - not_null
-          - unique
-      - name: item_list
-        description: "List of items purchased in the transaction"
+      - name: implicit_rating
+        description: "Log-normalized spend rating score ln(1 + spend)"
+        tests:
+          - not_null

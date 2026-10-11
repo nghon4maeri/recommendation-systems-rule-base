@@ -1,16 +1,16 @@
+# filepath: dbt_project/dbt_project.yml
+# ==============================================================================
+# dbt Project Configuration: Lakehouse ELT for Hybrid Recommender Platform
+# ==============================================================================
 
-# Name your project! Project names should contain only lowercase characters
-# and underscores. A good package name should reflect your organization's
-# name or the intended use of these models
 name: 'dbt_project'
-version: '1.0.0'
+version: '2.0.0'
+config-version: 2
 
-# This setting configures which "profile" dbt uses for this project.
+# Profile defined in profiles.yml or ~/.dbt/profiles.yml
 profile: 'dbt_project'
 
-# These configurations specify where dbt should look for different types of files.
-# The `model-paths` config, for example, states that models in this project can be
-# found in the "models/" directory. You probably won't need to change these!
+# Directory configuration
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
@@ -18,20 +18,31 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-clean-targets:         # directories to be removed by `dbt clean`
+# Clean targets
+clean-targets:
   - "target"
   - "dbt_packages"
+  - "logs"
 
-
-# Configuring models
-# Full documentation: https://docs.getdbt.com/docs/configuring-models
-
-# In this example config, we tell dbt to build all models in the example/
-# directory as views. These settings can be overridden in the individual model
-# files using the `{{ config(...) }}` macro.
+# Model Configurations
 models:
-  fp_growth_mba:
+  dbt_project:
     staging:
       +materialized: view
+      +schema: staging
+      +tags: ["staging", "daily_elt"]
     marts:
-      +materialized: view
+      +materialized: table
+      +schema: marts
+      +tags: ["gold_marts", "ml_features"]
+      transaction_fpgrowth:
+        +materialized: table
+        +tags: ["fpgrowth", "market_basket"]
+      user_item_dl:
+        +materialized: table
+        +tags: ["ncf", "deep_learning", "embeddings"]
+
+# Seeds configuration
+seeds:
+  dbt_project:
+    +schema: raw_seeds
