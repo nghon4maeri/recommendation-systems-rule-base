@@ -4,11 +4,12 @@ Senior Cloud Architect & Technical Lead:
 Diagrams-as-Code Automation for Enterprise Hybrid Recommender Platform.
 
 Generates High-Level System Architecture Diagram:
-- Client & UI Layer (Streamlit & Users)
+- Client & UI Layer (React 19, TypeScript, Tailwind CSS Storefront & Telemetry)
 - Low-latency Serving Layer (FastAPI & Redis Feature Store)
 - Event Streaming Fabric (Apache Kafka & Kafka Connect)
 - Lakehouse & Batch Layer (MinIO S3 & dbt / Spark)
 - MLOps & Orchestration Layer (Apache Airflow, PyTorch NCF & FP-Growth, MLflow)
+- Enterprise CI/CD & Testing Layer (Jenkins Declarative Pipeline, pytest, Docker)
 - Cloud-Native Deployment on Kubernetes
 """
 
@@ -30,12 +31,14 @@ from diagrams import Cluster, Diagram, Edge
 from diagrams.aws.storage import S3
 from diagrams.k8s.compute import Pod
 from diagrams.onprem.analytics import Dbt, Spark
-from diagrams.onprem.client import User, Users
+from diagrams.onprem.ci import Jenkins
+from diagrams.onprem.client import User
+from diagrams.onprem.container import Docker
 from diagrams.onprem.inmemory import Redis
 from diagrams.onprem.mlops import Mlflow
 from diagrams.onprem.queue import Kafka
 from diagrams.onprem.workflow import Airflow
-from diagrams.programming.framework import FastAPI
+from diagrams.programming.framework import FastAPI, React
 from diagrams.programming.language import Python
 
 
@@ -51,22 +54,22 @@ def generate_architecture_diagram(output_dir: Path) -> Path:
         "bgcolor": "#F8FAFC",
         "pad": "0.6",
         "splines": "spline",
-        "nodesep": "0.8",
-        "ranksep": "1.1",
+        "nodesep": "0.7",
+        "ranksep": "1.0",
     }
 
     node_attr = {
-        "fontsize": "12",
+        "fontsize": "11",
         "fontname": "Helvetica",
     }
 
     edge_attr = {
-        "fontsize": "10",
+        "fontsize": "9",
         "fontname": "Helvetica",
     }
 
     with Diagram(
-        name="Enterprise Hybrid Recommender Streaming Platform Architecture",
+        name="Enterprise Hybrid Recommender Streaming & MLOps Platform",
         filename=str(target_basename),
         outformat="png",
         show=False,
@@ -78,71 +81,82 @@ def generate_architecture_diagram(output_dir: Path) -> Path:
         # 1. CLIENT LAYER
         with Cluster("Client & Presentation Layer", graph_attr={"bgcolor": "#EEF2FF", "pencolor": "#6366F1"}):
             user = User("Shopper / Client\n(Browser / Mobile)")
-            streamlit_ui = Python("Streamlit UI\n(:8501 Dashboard)")
+            react_storefront = React("React 19 + TypeScript\nTailwind Storefront (:3000)\n& Telemetry Dashboard")
 
-        # 2. CLOUD-NATIVE KUBERNETES DEPLOYMENT
+        # 2. CI/CD & AUTOMATED TESTING LAYER
+        with Cluster("DevOps & CI/CD Delivery Pipeline", graph_attr={"bgcolor": "#FEF2F2", "pencolor": "#EF4444"}):
+            jenkins_ci = Jenkins("Jenkins CI/CD\n(Declarative Pipeline\n9 Automated Stages)")
+            pytest_suite = Python("pytest Test Suite\n(17 Automated Tests\nUnit & Integration)")
+            docker_packaging = Docker("Docker Multi-Stage\n(Backend, Frontend, Consumer)")
+
+        # 3. CLOUD-NATIVE KUBERNETES PRODUCTION CLUSTER
         with Cluster("Kubernetes Production Cluster (recsys-platform)", graph_attr={"bgcolor": "#FFFFFF", "pencolor": "#3B82F6"}):
 
             # A. SERVING LAYER
             with Cluster("Sub-5ms Serving Gateway", graph_attr={"bgcolor": "#EFF6FF", "pencolor": "#60A5FA"}):
-                fastapi_app = FastAPI("FastAPI Gateway\n(:8000)")
+                fastapi_app = FastAPI("FastAPI Gateway (:8000)\n(Latency SLA < 5ms)")
                 redis_store = Redis("Redis Feature Store (:6379)\n(Active Cart | Rules | Embeddings)")
 
             # B. INGESTION & REAL-TIME STREAMING
             with Cluster("Real-Time Event Streaming", graph_attr={"bgcolor": "#FEF3C7", "pencolor": "#F59E0B"}):
-                kafka_broker = Kafka("Apache Kafka\n(Topic: ecom.events.raw)")
-                cart_consumer = Pod("Cart Session Consumer\n(Session Windowing)")
+                kafka_broker = Kafka("Apache Kafka Broker\n(Topic: ecom.events.raw)")
+                cart_consumer = Pod("Cart Session Consumer\n(Sliding TTL 3600s)")
                 kafka_connect = Kafka("Kafka Connect\n(S3 / Parquet Sink)")
 
             # C. LAKEHOUSE & BATCH PROCESSING
-            with Cluster("Data Lakehouse & Batch Layer", graph_attr={"bgcolor": "#ECFDF5", "pencolor": "#10B981"}):
-                minio_storage = S3("MinIO Lakehouse (S3)\n(Bronze Partitioned Parquet)")
-                dbt_transform = Dbt("dbt Transformations\n(Staging & Gold Marts)")
+            with Cluster("Data Lakehouse & Storage", graph_attr={"bgcolor": "#ECFDF5", "pencolor": "#10B981"}):
+                minio_storage = S3("MinIO Lakehouse (S3)\n(805k Parquet Events)")
+                dbt_transform = Dbt("dbt Transformations\n(Quality Gates & Gold Marts)")
                 spark_engine = Spark("Apache Spark\n(Batch Aggregations)")
 
             # D. ORCHESTRATION & MLOPS
             with Cluster("Continuous MLOps & Orchestration", graph_attr={"bgcolor": "#FAF5FF", "pencolor": "#A855F7"}):
                 airflow_orch = Airflow("Apache Airflow\n(DAG Scheduler & Triggerer)")
-                fpgrowth_miner = Pod("FP-Growth Miner\n(Market Basket Rules)")
-                ncf_trainer = Pod("PyTorch NCF Training\n(CUDA Deep Learning)")
-                mlflow_registry = Mlflow("MLflow Model Registry\n(Version Control & Artifacts)")
+                fpgrowth_miner = Pod("FP-Growth Mining\n(Market Basket Analysis)")
+                ncf_trainer = Pod("PyTorch NCF Training\n(CUDA Latent Embeddings)")
+                mlflow_registry = Mlflow("MLflow Model Registry\n(Checkpoints & Metrics)")
 
         # ----------------------------------------------------
         # DATA FLOW CONNECTIONS & COLOR CODED EDGES
         # ----------------------------------------------------
 
-        # Luồng tương tác người dùng (Client Interaction)
-        user >> Edge(label="1. Browse / Add to Cart", color="#4F46E5", style="bold") >> streamlit_ui
-        streamlit_ui >> Edge(label="2. Real-time Events\n(view, cart, buy)", color="#D97706", style="bold") >> kafka_broker
-        streamlit_ui >> Edge(label="Query Recs (<5ms)", color="#2563EB", style="dashed") >> fastapi_app
+        # CI/CD Flow
+        jenkins_ci >> Edge(label="1. Run Test Gate", color="#DC2626", style="bold") >> pytest_suite
+        pytest_suite >> Edge(label="2. Quality Approval", color="#059669") >> docker_packaging
+        docker_packaging >> Edge(label="3. Rolling Deploy", color="#2563EB", style="bold") >> fastapi_app
+        docker_packaging >> Edge(label="Deploy UI", color="#2563EB") >> react_storefront
 
-        # Luồng Real-time Serving (Sub-5ms)
+        # Client Interactions
+        user >> Edge(label="Browse / Add to Cart", color="#4F46E5", style="bold") >> react_storefront
+        react_storefront >> Edge(label="Stream Events\n(view, cart, buy)", color="#D97706", style="bold") >> kafka_broker
+        react_storefront >> Edge(label="Fetch Hybrid Recs\n(< 5ms SLA)", color="#2563EB", style="dashed") >> fastapi_app
+
+        # Real-time Serving & State
         kafka_broker >> Edge(label="Stream Events", color="#D97706") >> cart_consumer
         cart_consumer >> Edge(label="HSET active_cart\n(TTL 3600s)", color="#DC2626", style="bold") >> redis_store
         fastapi_app >> Edge(label="O(1) Feature Lookup", color="#2563EB", style="bold") >> redis_store
 
-        # Luồng Lakehouse Ingestion
+        # Lakehouse Storage
         kafka_broker >> Edge(label="Micro-batch Dump", color="#059669") >> kafka_connect
-        kafka_connect >> Edge(label="Write Raw Parquet", color="#059669", style="bold") >> minio_storage
+        kafka_connect >> Edge(label="Write Bronze Parquet", color="#059669", style="bold") >> minio_storage
 
-        # Luồng Batch ELT & Data Quality
+        # Batch ELT
         airflow_orch >> Edge(label="Trigger Daily ELT", color="#7C3AED", style="dotted") >> dbt_transform
         minio_storage >> Edge(label="Read Bronze", color="#059669") >> dbt_transform
         dbt_transform >> Edge(label="Curated Marts", color="#059669") >> spark_engine
         spark_engine >> Edge(label="Gold Tables", color="#059669") >> minio_storage
 
-        # Luồng MLOps & Retraining
+        # Continuous Retraining
         airflow_orch >> Edge(label="Trigger Weekly Retrain", color="#7C3AED", style="bold") >> fpgrowth_miner
         airflow_orch >> Edge(label="Trigger NCF Retrain", color="#7C3AED", style="bold") >> ncf_trainer
 
         minio_storage >> Edge(label="Read Baskets", color="#4B5563", style="dashed") >> fpgrowth_miner
         minio_storage >> Edge(label="Read Interactions", color="#4B5563", style="dashed") >> ncf_trainer
+        ncf_trainer >> Edge(label="Log Model & Weights", color="#9333EA") >> mlflow_registry
 
-        ncf_trainer >> Edge(label="Log Checkpoints", color="#9333EA") >> mlflow_registry
-
-        # Đồng bộ Feature Store (Sync to Redis)
-        fpgrowth_miner >> Edge(label="Sync Association Rules", color="#DC2626", style="bold") >> redis_store
-        ncf_trainer >> Edge(label="Sync User Embeddings", color="#DC2626", style="bold") >> redis_store
+        # Feature Store Sync
+        fpgrowth_miner >> Edge(label="Sync FP Rules", color="#DC2626", style="bold") >> redis_store
+        ncf_trainer >> Edge(label="Sync Embeddings", color="#DC2626", style="bold") >> redis_store
 
     generated_png = output_dir / "architecture.png"
     print(f"Architecture diagram generated successfully at: {generated_png}")

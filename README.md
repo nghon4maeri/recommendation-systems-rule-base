@@ -451,7 +451,22 @@ This updates [imgs/architecture.png](imgs/architecture.png) and ensures system d
 
 ---
 
-## 15. License & Acknowledgements
+## 15. Comprehensive Technical Documentation Index
+
+Detailed architectural and engineering documentation is organized into dedicated deep-dive guides:
+
+| Document | Key Topics Covered |
+| :--- | :--- |
+| **[01. System Architecture](docs/01_system_architecture.md)** | Phân tầng kiến trúc, luồng dữ liệu hai chiều (Online Serving vs. Offline Batch), SLA < 5ms |
+| **[02. Tech Stack Deep Dive](docs/02_tech_stack_deep_dive.md)** | Phân tích sâu 12 công nghệ: Để làm gì? Dùng như thế nào? Pipeline ra sao? Tại sao dùng? |
+| **[03. Data Pipeline & Streaming](docs/03_data_pipeline_and_streaming.md)** | Kaggle 805k transactions, nội suy phễu mua sắm, Kafka producer 20k events/s, Sliding TTL 3600s |
+| **[04. MLOps & Recommender Models](docs/04_mlops_and_recommender_models.md)** | Toán học FP-Growth (Lift/Confidence), kiến trúc mạng PyTorch NCF (GMF + MLP), thuật toán Hybrid Ensemble |
+| **[05. Testing & CI/CD Pipeline](docs/05_testing_and_cicd_pipeline.md)** | Bộ kiểm thử pytest 17/17 tests passed, MockRedis in-memory, Jenkins Declarative Pipeline 9 stages |
+| **[06. Deployment & Operations](docs/06_deployment_and_operations_guide.md)** | Hướng dẫn triển khai Docker Compose, Kubernetes HPA, giám sát độ trễ Redis và Kafka lag |
+
+---
+
+## 16. License & Acknowledgements
 
 - **License**: MIT License
 - **Dataset**: [Kaggle UCI Online Retail II](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci)
